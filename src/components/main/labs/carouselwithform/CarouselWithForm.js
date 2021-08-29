@@ -1,25 +1,23 @@
-import React, { Component } from 'react';
-import { Formik, Field, Form } from 'formik';
-import { action } from '@storybook/addon-actions';
+import React from 'react';
+//import { action } from '@storybook/addon-actions';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.css";
-import { withKnobs, boolean, number, text } from '@storybook/addon-knobs';
+//import { boolean, number, text } from '@storybook/addon-knobs';
 import img from '../../../../assets/images/team.jpg';
 import imgSubmitPrev from '../../../../assets/images/carousel/submit.png';
 import imgSubmitNext from '../../../../assets/images/carousel/submit2.png';
 
 const createCarouselItemImage = (index, options = {}) => (
   <div key={index}>
-      <img src={img} />
+      <img src={img} alt='img' />
       <p className="legend">Legend {index}</p>
   </div>
 );
 const baseChildren = <div>{[1, 2, 3, 4, 5].map(createCarouselItemImage)}</div>;
-const tooglesGroupId = 'Toggles';
-const valuesGroupId = 'Values';
-const mainGroupId = 'Main';
+//const tooglesGroupId = 'Toggles';
+//const valuesGroupId = 'Values';
 
-const getConfigurableProps = () => ({
+/* const getConfigurableProps = () => ({
     showArrows: boolean('showArrows', true, tooglesGroupId),
     showStatus: boolean('showStatus', true, tooglesGroupId),
     showIndicators: boolean('showIndicators', true, tooglesGroupId),
@@ -38,7 +36,7 @@ const getConfigurableProps = () => ({
     transitionTime: number('transitionTime', 500, {}, valuesGroupId),
     swipeScrollTolerance: number('swipeScrollTolerance', 5, {}, valuesGroupId),
     ariaLabel: text('ariaLabel', undefined)
-});
+}); */
 
 const withCustomStatusArrowsAndIndicators = () => {
 
@@ -65,14 +63,14 @@ const withCustomStatusArrowsAndIndicators = () => {
           renderArrowPrev={(onClickHandler, hasPrev, label) =>
               hasPrev && (
                   <button type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, left: 15 }}>
-                      <img src={imgSubmitPrev} />
+                      <img src={imgSubmitPrev} alt="img" />
                   </button>
               )
           }
           renderArrowNext={(onClickHandler, hasNext, label) =>
               hasNext && (
                   <button type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, right: 15 }}>
-                      <img src={imgSubmitNext} />    
+                      <img src={imgSubmitNext} alt="img" />    
                   </button>
               )
           }

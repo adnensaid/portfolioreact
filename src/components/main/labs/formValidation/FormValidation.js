@@ -2,9 +2,8 @@ import React, { Component } from 'react'
 import { Formik, Field} from 'formik';
 import * as Yup from 'yup';
 //import Style from './hoc.module.scss';
-import ListFields from './listfields/ListFields';
 
-const ButtonNext = (props)=>{
+/* const ButtonNext = (props)=>{
   return(
     <button
       type="button" 
@@ -15,7 +14,7 @@ const ButtonNext = (props)=>{
         Next
     </button>    
   )
-}
+} */
 
 
 export default class FormValidation extends Component{

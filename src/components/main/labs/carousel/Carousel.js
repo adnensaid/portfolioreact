@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-export default class Carousel extends React.Component {
+export default class Carousel extends Component {
   constructor() {
     super();
     this.state = {
@@ -24,11 +24,7 @@ export default class Carousel extends React.Component {
       }
   }
   render() {
-    let sliderStyle ={
-      transform:`translateX(${this.state.activeIndex * -100}%)`,
-      transition: '0.2s'
-    }
-    let computedClass = (this.state.activeIndex) ? 'slide active' : 'slide';
+
     return (
       <div className='container-carousel'>
         <button onClick={this.onPrevClick}>◀</button>
