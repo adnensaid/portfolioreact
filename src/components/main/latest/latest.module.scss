@@ -1,0 +1,30 @@
+@import '../../../assets/styles/media-queries';
+
+.latest{
+  position: fixed;
+  right: 0;
+  top: 22.5rem;
+  min-width: 45rem;
+  background: var(--blue-light);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+  box-shadow: var(--shadow);
+  transform: rotate(45deg) translateY(-16rem);
+  @include xs{
+    transform: rotate(45deg) translateY(-20rem);
+    font-size: 1.1rem;
+  }
+  @include sm{
+    transform: rotate(45deg) translateY(-22rem);
+    font-size: 1.1rem;
+  }
+  &:hover{
+    opacity: 0.9;
+  }
+} 

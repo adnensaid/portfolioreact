@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)http://127.0.0.1:5500/creations/boiteResponsive/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Document_files/boite.css">
+  <link rel="stylesheet" href="./Document_files/varaibles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+<!--     <div class="boite">
+      <img src="../../img/images-layout/adnensaid.jpg" alt="">
+      <div class="contenu">
+        <h1>adnen</h1>
+        <p class="job">Développeur front-end</p>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Impedit ab odio rerum?
+        </p>
+      </div>
+    </div> -->
+    <div class="boite-grid">
+      <img src="./Document_files/frame.jpg" alt="">
+      <div class="contenu">
+        <div class="contenu-text">
+          <h1>Said Adnen</h1>
+          <p class="job">Développeur front-end</p>  
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Amet aperiam optio rem?
+          </p>    
+          <button class="btn btn-primary-portfolio">voir cv</button>
+        </div> 
+      </div>
+      <div class="barre-info">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Dolorem nulla beatae dolor veritatis suscipit corporis,
+          doloribus nobis odio at dolores consequatur illo cupiditate esse.
+          Corporis debitis neque recusandae animi veritatis?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Dolorem nulla beatae dolor veritatis suscipit corporis,
+          doloribus nobis odio at dolores consequatur illo cupiditate esse.
+          Corporis debitis neque recusandae animi veritatis?
+        </p>  
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Dolorem nulla beatae dolor veritatis suscipit corporis,
+          doloribus nobis odio at dolores consequatur illo cupiditate esse.
+          Corporis debitis neque recusandae animi veritatis?
+        </p>  
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Dolorem nulla beatae dolor veritatis suscipit corporis,
+          doloribus nobis odio at dolores consequatur illo cupiditate esse.
+          Corporis debitis neque recusandae animi veritatis?
+        </p>  
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Dolorem nulla beatae dolor veritatis suscipit corporis,
+          doloribus nobis odio at dolores consequatur illo cupiditate esse.
+          Corporis debitis neque recusandae animi veritatis?
+        </p>  
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Dolorem nulla beatae dolor veritatis suscipit corporis,
+          doloribus nobis odio at dolores consequatur illo cupiditate esse.
+          Corporis debitis neque recusandae animi veritatis?
+        </p>  
+      </div>   
+    </div>
+  </div>
+  <script>
+    console.log('ciao');
+    var p = document.querySelector(".barre-info").classList.forEach(elem => console.log(elem));
+    console.log(p);
+  </script>  
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

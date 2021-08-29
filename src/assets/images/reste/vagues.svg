@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with EazyDraw for Mac ( http://www.eazydraw.com/ ) -->
+
+<svg
+    version="1.0"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+    width="516.59020828"
+    height="294.834698389"
+    viewBox="0, 0, 516.59020828, 294.834698389"
+    preserveAspectRatio="none"
+    id="svg2">
+   <defs
+       id="defs_98D3AAA4"/>
+   <metadata
+       id="metadata7">
+      <rdf:RDF>
+         <cc:Work
+             rdf:about="">
+            <dc:format>image/svg+xml</dc:format>
+            <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+            <dc:title></dc:title>
+         </cc:Work>
+      </rdf:RDF>
+   </metadata>
+   <g
+       id="layer_Paper"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;fill-rule:nonzero;stroke-linecap:square;stroke-linejoin:miter;stroke-width:1;stroke-miterlimit:10">
+      <path
+          style="fill:#F1F2F6;stroke:none"
+          id="6FB1BA74"
+          d="M507.520106642,294.226608842 C206.427725234,207.656157319 418.269252585,362.993978728 140.438297673,254.904161876 C50.3778964586,256.178602983 142.985429519,304.408054072 9.345552068009,287.38484107 C7.912277834441,211.231331897 6.479003602082,135.077822724 5.045729368255,58.924313551
+C174.359889293,61.96176769 343.674049217,64.999221829 512.988209143,68.036675967"/>
+      <path
+          style="fill:#FAC9C9;stroke:none"
+          id="C8C5FC74"
+          d="M508.055671253,249.817833894 C205.395823119,163.247382371 418.340183241,318.58520378 139.062859028,210.495386928 C48.5336094104,211.769828035 141.623251072,259.999279124 7.287653389356,242.976066122 C5.846917626342,166.822556949 4.406181864542,90.6690477752 2.965446101266,14.5155386025
+C173.161044177,17.5529927415 343.356642252,20.5904468805 513.552240328,23.6279010185"/>
+      <path
+          style="fill:#FFFFFF;stroke:none"
+          id="B1CA9E74"
+          d="M511.02901125,169.069107406 C204.810527433,106.866616144 420.258660035,218.479750982 137.697628856,140.81519258 C46.10394793,141.730902391 140.288125662,176.384666547 4.373027247191,164.153169086 C2.915351497807,109.435446057 1.457675749645,54.7177230282 0,0
+C172.196736094,2.18246770364 344.393472186,4.36493540728 516.59020828,6.547403110201"/>
+   </g>
+</svg>

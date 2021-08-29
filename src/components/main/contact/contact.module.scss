@@ -1,0 +1,122 @@
+@import '../../../assets/styles/media-queries';
+.contact{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  .contactContent{
+    max-width: 70rem;
+    margin: auto;
+    .contactText{
+      //margin-bottom: 8rem;
+      h1{
+        font-size: 4rem;
+      }
+      p{
+        font-size: 1.8rem;
+        margin-bottom: 0;
+        @include xs{
+          font-size: 1.4rem;
+          font-weight: 400;
+          margin: 1rem 0;    
+        }
+      }
+      h3{
+        font-size: 1.8rem;
+        letter-spacing: .1rem;
+        font-weight: bold;
+        margin: 0;
+        @include xs{
+          font-size: 1.4rem;   
+        }
+      }    
+    }
+    .talk{
+      margin-top: 8rem;
+      form{
+        input{
+          border: 0;
+          border-radius: 0;
+          background:var(--blue);
+          border-bottom: .1rem solid #c4c4c4;
+          outline: 0;
+          color: var(--white);
+          min-width: 100%;
+          font-weight: bold;
+          letter-spacing: 0.1rem;
+          font-size: 1.4rem;
+          @include xs{
+            padding: 1rem 12rem 1rem 0;
+          }
+          &::placeholder{
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #c4c4c4;
+          }
+        }  
+        .btn{
+          padding: 1.5rem;
+          margin: 1rem .5rem 1rem 0;
+          border: 0;
+          border-radius: .2rem;
+          font-weight: 700;
+          background: #c4c4c4;
+          color: var(--white);
+          font-size: 1.6rem;
+          cursor: pointer;
+          box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+          @include xs{
+            padding: 1rem;
+            font-size: 1.4rem;
+          }
+        } 
+      }
+      .socials{
+        margin-top: 4rem;
+        h2{
+          font-size: 2.8rem;
+          @include xs{
+            font-size: 2rem;
+          }
+        }
+        p{
+          font-size: 1.8rem;
+          margin-bottom: 2rem;
+        }
+        ul{
+          max-width: 40rem;
+          display: flex;
+          justify-content: space-between;
+          @include xs{
+            max-width: 32rem;
+          }
+          li{
+            padding: 1rem 2rem;
+            border-radius: .2rem;
+            box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+            @include xs{
+              padding: .5rem 1rem;
+            }
+            &:nth-child(1){
+              background: var(--facebook);
+            }
+            &:nth-child(2){
+              background: var(--linkedin);
+            }
+            &:nth-child(3){
+              background: var(--twitter);
+            }
+            &:nth-child(4){
+              background: var(--dark);
+            }
+            a{
+              color: var(--white);
+              font-weight: 700;
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }     
+    }     
+  }
+}
+

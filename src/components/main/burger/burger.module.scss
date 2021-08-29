@@ -1,0 +1,96 @@
+@import '../../../assets/styles/media-queries';
+
+
+
+.burger{
+  width: 5rem;
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin:5rem 4rem 0 0;
+  @include xs{
+    margin: 3rem 2rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  cursor: pointer;
+  .dropdownToggle{
+    min-height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    i{
+      height: 0.1rem;
+      background: var(--white);
+      &:nth-child(2){
+        margin: 1.2rem 0;
+        transition: all .1s ease .1s;
+      }
+      &:nth-child(1){
+        transition: all .1s ease;
+      }
+      &:nth-child(3){
+        transition: all .1s ease .2s;
+      }
+    }
+  }
+  
+}
+
+/* .menu{
+  position: fixed;
+  right: 0;
+  @include xs{
+    right: 1rem;
+    bottom: 2rem;
+    z-index: 1;
+  }
+  @include sm{
+    right: 1rem;
+    bottom: 2rem;
+    z-index: 1;
+  }
+  .burger{
+    margin:5rem 4rem 0 0;
+    @include xs{
+      margin: 0;
+    }
+    @include sm{
+      margin: 0;
+    }
+    cursor: pointer;
+    .dropdownToggle{
+      width: 6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include xl{
+        width: 4rem;
+        height: 4rem;
+      }    
+      @include sm{
+        width: 5rem;
+        height: 5rem;
+        padding: 1rem;
+        border: 0.1rem solid var(--white);
+        border-radius: 100%;
+        background: var(--blue-light);
+      }  
+      @include xs{
+          width: 5rem;
+          height: 5rem;
+          padding: 1rem;
+          border: 0.1rem solid var(--white);
+          border-radius: 100%;
+          background: var(--blue-light);
+      }   
+      i{
+        transition: all .1s ease .4s;
+        height: .2rem;
+        //flex:0 0 0.2rem;
+        background: var(--white);
+      } 
+    }      
+  }  
+}  */

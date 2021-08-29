@@ -1,0 +1,329 @@
+/* window */
+.window{
+  background: var(--gray);
+  min-height: 40rem;
+  display: flex;
+  flex-direction: column;  
+  .window-titre{
+    position: relative;
+    padding: 0.5rem;
+    background: var(--dark);
+    i{
+      display: block;
+      width: 1.2rem;
+      height: 1.2rem;
+      background-color: var(--red);
+      border-radius: 100%;  
+      position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        right: -1.4rem;
+        width: 100%;
+        height: 100%;
+        background-color: var(--yellow);
+        border-radius: 100%;  
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        right: -2.8rem;
+        width: 100%;
+        height: 100%;
+        background-color: var(--green);
+        border-radius: 100%;  
+      } 
+    } 
+    p{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--gray);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }      
+  }  
+  .window-content{
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+  }
+}
+
+/* text color */
+.text-dark{
+  color: var(--dark);
+}
+.text-red{
+  color: var(--red);
+}
+.text-gray{
+  color: var(--gray);
+}
+.text-green{
+  color: var(--green);
+}
+.text-blue{
+  color: var(--blue);
+}
+.text-hint{
+  color: var(--gray);
+  letter-spacing: .1rem;
+}
+.text-danger{
+  color: var(--red);
+}
+/* quote */
+.quote{
+  font-style: italic;
+  &::before{
+    content: "\AB";
+    padding: 0 0.5rem;
+
+  }
+  &::after{
+    content: "\BB";
+    padding: 0 0.5rem;
+  }
+}
+
+/* buttons */
+
+.btn{
+  border: 0;
+  margin: 2rem 0;
+  outline: 0;
+  cursor: pointer;
+
+  &-primary{
+    background: var(--green);
+    padding: 1rem 2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white);
+  }
+  &-det{
+    background: linear-gradient(to top, var(--pink) 50%, var(--background) 50% );
+    padding: 1rem;
+  }
+  &-small{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    max-width: 10rem;
+  }
+  &:disabled{
+    opacity: .5;
+  }
+}
+
+.shadow{
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+}
+
+/* flex */
+.d-flex{
+  display: flex;
+}
+.flex-column{
+  flex-direction: column;
+}
+.bg-white{
+  background: var(--white);
+}
+.flex-1{
+  flex: 1;
+}
+.flex-auto{
+  flex: auto;
+}
+.align-items-center{
+  align-items: center;
+}
+.justify-content-center{
+  justify-content: center;
+}
+
+/* form */
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+.form-control{
+  border: .1rem solid var(--gray);
+}
+
+
+/* loading ... icon */
+.load-page{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 100vh;
+  background-color: var(--blue-1); 
+  z-index: 1;  
+  display: flex;
+  justify-content:center;  
+  align-items: center;
+  animation: fadeout-load 0.8s ease forwards 1.7s;
+  .circles{
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    animation: fadeout-load 0.8s ease forwards 1.7s;
+    .circle{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      &::after{
+        content: "";
+        width: 1rem;
+        height: 1rem;
+        background-color: var(--white);
+      }  
+    }
+    .circle-1{
+      animation: rotate-load-1 0.1s ease forwards;
+    }
+    .circle-2{
+      animation: rotate-load-2 0.1s ease forwards 0.1s;
+    }  
+    .circle-3{
+      animation: rotate-load-3 0.1s ease forwards 0.2s;
+    }    
+    .circle-4{
+      animation: rotate-load-4 0.1s ease forwards 0.3s;
+    } 
+    .circle-5{
+      animation: rotate-load-5 0.1s ease forwards 0.4s;
+    }     
+    .circle-6{
+      animation: rotate-load-6 0.1s ease forwards 0.5s;
+    }
+    .circle-7{
+      animation: rotate-load-7 0.1s ease forwards 0.6s;
+    }          
+    .circle-8{
+      animation: rotate-load-8 0.1s ease forwards 0.7s;
+    }     
+    .circle-9{
+      animation: rotate-load-9 0.1s ease forwards 0.8s;
+    }  
+    .circle-10{
+      animation: rotate-load-10 0.1s ease forwards 0.8s;
+    }
+    .circle-11{
+      animation: rotate-load-11 0.1s ease forwards 0.9s;
+    }  
+    .circle-12{
+      animation: rotate-load-12 0.1s ease forwards 1s;
+    }       
+    .circle-13{
+      animation: rotate-load-13 0.1s ease forwards 1.1s;
+    }                                             
+    .circle-14{
+      animation: rotate-load-14 0.1s ease forwards 1.2s;
+    }       
+    .circle-15{
+      animation: rotate-load-15 0.1s ease forwards 1.3s;
+    }       
+    .circle-16{
+      animation: rotate-load-16 0.1s ease forwards 1.4s;
+    }       
+    .circle-17{
+      animation: rotate-load-17 0.1s ease forwards 1.5s;
+    }       
+    .circle-18{
+      animation: rotate-load-18 0.1s ease forwards 1.6s;
+    }   
+  }   
+}
+
+
+/*  carousel */
+.container-carousel{
+  flex: 1;
+  display: grid;
+  grid-template-columns: 10rem 1fr 10rem;
+  button{
+    cursor: pointer;
+  }
+  .slide-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  } 
+   
+  li {
+    list-style: none;
+    font-size: 112px;
+    color: white;
+    padding: 0 4px 0 4px 
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .2s
+
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+    
+  li:nth-child(1) {
+    background: #1abc9c
+  }
+    
+  li:nth-child(2){
+    background: #e67e22
+  }
+    
+  li:nth-child(3){
+    background: #2ecc71
+  }
+    
+  li:nth-child(4) {
+    background: #8e44ad
+  }
+    
+  li:nth-child(5) {
+    background: #e74c3c
+  } 
+}
+
+.position-relative{
+  position: relative;
+}
+.position-absolute{
+  position: absolute;
+}
