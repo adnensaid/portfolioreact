@@ -1,0 +1,15 @@
+@import '../../../assets/styles/media-queries';
+.footer{
+  font-size: 1.6rem;
+  max-width: 50rem;
+  margin: auto;
+  p{
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--color-icon);
+  }
+  @include xs{
+    max-width: 25rem;
+    font-size: 1.4rem;
+  }
+}

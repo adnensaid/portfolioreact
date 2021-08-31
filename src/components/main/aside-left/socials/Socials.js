@@ -6,27 +6,46 @@ export default  class Socials extends Component{
       <div className={ Style.socials }>
         <div className={ Style.socialsElem }>
           <div className={ Style.queu }></div>
-          <div className={ Style.socialsElemImg }>
+          <a 
+          href="https://www.linkedin.com/in/adnensaid83/"
+          target="_blank"
+          rel="noreferrer"
+          className={ Style.socialsElemImg }
+          >
             <i className="fab fa-linkedin"></i>
-          </div>
+          </a>
         </div>
-        <div href="#" className={ Style.socialsElem }>
+        <div className={ Style.socialsElem }>
           <div className={ Style.queu }></div>
-          <div className={ Style.socialsElemImg }>
+          <a 
+          href="https://www.instagram.com/adnen.said/"
+          target="_blank"
+          rel="noreferrer"
+          className={ Style.socialsElemImg }>
             <i className="fab fa-instagram"></i>
-          </div>
+          </a>
         </div>
-        <div href="#" className={ Style.socialsElem }>
+        <div className={ Style.socialsElem }>
           <div className={ Style.queu }></div>
-          <div className={ Style.socialsElemImg }>
+          <a 
+          className={ Style.socialsElemImg }
+          href="https://github.com/adnensaid"
+          target="_blank"
+          rel="noreferrer"
+          >
             <i className="fab fa-github"></i>
-          </div>
+          </a>
         </div>
-        <div href="#" className={ Style.socialsElem }>
+        <div className={ Style.socialsElem }>
           <div className={ Style.queu }></div>
-          <div className={ Style.socialsElemImg }>
+          <a 
+          className={ Style.socialsElemImg }
+          href="https://twitter.com/"
+          target="_blank"
+          rel="noreferrer"
+          >
             <i className="fab fa-twitter"></i>
-          </div>
+          </a>
         </div>
       </div>    
     )        

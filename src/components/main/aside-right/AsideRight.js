@@ -45,7 +45,7 @@ export default class AsideRight extends Component{
     }else if(this.props.location.pathname === "/field-array"){
       content = (
         <Arrow  
-        title = "formValidation"
+        title = "validation"
         to="/form-validation" 
         startStopAnimationArrowRight = { this.props.startStopAnimationArrowRight }  
         classNameArrowRight = { this.props.classNameArrowRight }
@@ -59,7 +59,7 @@ export default class AsideRight extends Component{
     else if(this.props.location.pathname === "/form-validation"){
       content = (
         <Arrow  
-        title = "labs-cube"
+        title = "cube"
         to="/labs-cube" 
         startStopAnimationArrowRight = { this.props.startStopAnimationArrowRight }  
         classNameArrowRight = { this.props.classNameArrowRight }

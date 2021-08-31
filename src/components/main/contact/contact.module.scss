@@ -3,17 +3,26 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  @include xs{
+    padding: 2rem;
+  }
   .contactContent{
     max-width: 70rem;
     margin: auto;
     .contactText{
-      //margin-bottom: 8rem;
+      @include xs{
+        margin-top: 10rem;
+      }
       h1{
         font-size: 4rem;
+        @include xs{
+          font-size: 3.3rem;
+        }
       }
       p{
         font-size: 1.8rem;
         margin-bottom: 0;
+        color: var(--color-icon);
         @include xs{
           font-size: 1.4rem;
           font-weight: 400;
@@ -25,6 +34,7 @@
         letter-spacing: .1rem;
         font-weight: bold;
         margin: 0;
+        color: var(--color-icon);
         @include xs{
           font-size: 1.4rem;   
         }
@@ -36,7 +46,7 @@
         input{
           border: 0;
           border-radius: 0;
-          background:var(--blue);
+          background:var(--bg-dark);
           border-bottom: .1rem solid #c4c4c4;
           outline: 0;
           color: var(--white);
@@ -72,6 +82,7 @@
       }
       .socials{
         margin-top: 4rem;
+        color: var(--color-icon);
         h2{
           font-size: 2.8rem;
           @include xs{
@@ -79,15 +90,14 @@
           }
         }
         p{
-          font-size: 1.8rem;
-          margin-bottom: 2rem;
+          font-size: 1.4rem;
         }
         ul{
           max-width: 40rem;
           display: flex;
           justify-content: space-between;
           @include xs{
-            max-width: 32rem;
+            flex-direction: column;
           }
           li{
             padding: 1rem 2rem;
@@ -95,6 +105,8 @@
             box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
             @include xs{
               padding: .5rem 1rem;
+              margin: 1rem 0;
+              text-align: center;
             }
             &:nth-child(1){
               background: var(--facebook);

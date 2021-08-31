@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../../index.scss';
-import { AsideLeft, PageAbout, Portfolio, Labs, Contact, DropdownMenu ,AsideRight, LabsCube, ProgressAnimation, SocialAnimation, Montre, ArrowAnimation, Burger, Latest, FormValidation, FieldArray, Carousel, CarouselWithForm } from '../../components/index';
+import { AsideLeft, PageAbout, Portfolio, Labs, Contact, DropdownMenu ,AsideRight, LabsCube, ProgressAnimation, SocialAnimation, Montre, ArrowAnimation, Burger, Latest, FormValidation, FieldArray, Carousel, CarouselWithForm} from '../../components/index';
 import { Route ,Switch, Redirect, withRouter } from 'react-router-dom';
 
 const AsideLeftWithRouter = withRouter(AsideLeft);
@@ -92,7 +92,7 @@ export default class Main extends Component{
 
   render(){
     return(
-      <div className="main">
+      <div className="main" style={{ minHeight:'100vh', position:'relative' }}>
       <AsideLeftWithRouter
       startStopAnimationArrowLeft = { this.startStopAnimationArrowLeft }
       classNameArrowLeft = { this.state.classNameArrowLeft }

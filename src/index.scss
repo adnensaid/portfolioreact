@@ -27,7 +27,7 @@
   }  
   .page{
     grid-column: 2 / 3;
-    background-color: var(--blue);
+    background: var(--bg-dark);
     display: flex;
     flex-direction: column;
     line-height: 2.5rem;

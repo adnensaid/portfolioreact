@@ -3,14 +3,16 @@
   0%{
     transform: translateX(0);
   }100%{
-    transform: translateX(-15rem);
+    transform: translateX(-30rem);
+    opacity: 0;
   }
 }
 @keyframes translateTextRight{
   0%{
     transform: translateX(0);
   }100%{
-    transform: translateX(15rem);
+    transform: translateX(30rem);
+    opacity: 0;
   }
 }
 @keyframes rotateBarTopRight{

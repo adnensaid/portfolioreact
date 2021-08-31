@@ -5,8 +5,8 @@ import imgSocial from '../../../assets/images/labs/socials.png';
 import imgArrow from '../../../assets/images/arrow.png';
 import imgProgress from '../../../assets/images/labs/progress.png';
 import imgForm from '../../../assets/images/labs/formvalidate.png';
-
-import ArticlesList from '../articlesList/ArticleList';
+import ArticlesList from './articlesList/ArticleList';
+import Footer from '../footer/Footer';
 export default class Labs extends Component{
   constructor(props){
     super(props);
@@ -61,13 +61,15 @@ export default class Labs extends Component{
   }
   render(){
     return(   
+      <>
       <ArticlesList
         articles = { this.state.articles }
         name = { this.state.name }
         description = { this.state.description }
         show = { this.props.show }
-      />  
-
+      /> 
+      <Footer /> 
+      </>
     )
   }
 }

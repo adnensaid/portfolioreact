@@ -5,7 +5,6 @@ export { default as DropdownMenu } from './main/dropdown-menu/DropdownMenu';
 export { default as Portfolio } from './main/portfolio/Portfolio';
 export { default as Labs } from './main/labs/Labs';
 export { default as Contact } from './main/contact/Contact';
-export { default as ArticleList } from './main/articlesList/ArticleList';
 export { default as LabsCube } from './main/labs/LabsCube/LabsCube';
 export { default as ProgressAnimation } from './main/labs/progressAnimation/ProgressAnimation';
 export { default as SocialAnimation } from './main/labs/socialsAnimation/SocialAnimation';
@@ -17,3 +16,4 @@ export { default as FormValidation } from './main/labs/formValidation/FormValida
 export { default as FieldArray } from './main/labs/fieldArray/FieldArray';
 export { default as Carousel } from './main/labs/carousel/Carousel';
 export { default as CarouselWithForm } from './main/labs/carouselwithform/CarouselWithForm';
+export { default as Footer } from './main/footer/Footer';

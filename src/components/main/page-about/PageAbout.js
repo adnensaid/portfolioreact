@@ -1,15 +1,20 @@
 import React from 'react';
-import styles from './PageAbout.module.scss';
+import Style from './PageAbout.module.scss';
 const PageAbout = ()=>{
   return(
-    <div className={ styles.pageAbout }>
-    <h1>Hi, je m'appelle <strong>Adnen</strong> Said </h1>
-    <p>
-      Je suis développeur Front end HTML, CSS et Javascript,
-      vous trouvez une liste de mes dernièrs projets
-      dans la page portfolio    
-    </p>
-  </div>    
+    <>
+      <div className={ Style.pageAbout }>
+        <h1>Hi, je m'appelle Adnen said</h1>
+        <p>
+          Je suis développeur Frontend <strong className={ Style.lang }>HTML, CSS3, JS et REACTJS </strong>
+          vous trouvez une liste de mes dernièrs projets
+          dans la page portfolio    
+        </p>
+      </div>   
+      <div className={ Style.cv }>
+        <a href="https://www.adnensaid.fr/contact" className="shadow">Voir mon cv</a>
+      </div>
+    </>   
   )
 }
 export default PageAbout;

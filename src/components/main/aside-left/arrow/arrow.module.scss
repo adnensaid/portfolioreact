@@ -25,15 +25,14 @@
       align-items: center;
       justify-content: flex-end;
       transition: all 0.2s;
-      background: var(--blue);
       &::after{
         content: "";
         position: absolute;
         width: 49%;
         height: 0.1rem;
-        border: 0.1rem solid var(--white);
+        border: 0.1rem solid var(--color-icon);
         border-bottom-left-radius: 1rem;
-        background: var(--white);
+        background: var(--color-icon);
       
       }
     }
@@ -53,8 +52,8 @@
         display: block;
         width: 0.1rem;
         height: 49%;
-        border: 0.1rem solid var(--white);
-        background: var(--white);
+        border: 0.1rem solid var(--color-icon);
+        background: var(--color-icon);
         border-bottom-left-radius: 1rem;
 
   
@@ -68,9 +67,9 @@
       right: 0;
       display: flex;
       align-items: center;
-      color: var(--white);
+      color: var(--color-icon);
       font-weight: 700;
-      font-size: 1.1rem; 
+      font-size: 1.4rem; 
       transform: rotate(-45deg);
       opacity: 0;
       transition: all 0.2s ease;
