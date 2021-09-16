@@ -1,11 +1,28 @@
+/*  Styles */
+
 @import './assets/styles/reset';
-@import './assets/styles/variables';
 @import './assets/styles/base';
+@import './assets/styles/variables';
 @import './assets/styles/classes';
 @import './assets/styles/media-queries';
 @import './assets/styles/utils';
 @import './assets/styles/animations';
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
+/* fonts */
+
+@import './assets/fonts/bevietnam/stylesheet.css';
+@import './assets/fonts/lato/stylesheet.css';
+@import './assets/fonts/montserrat/stylesheet.css';
+@import './assets/fonts/MYRIADPRO-REGULAR/style.css';
+@import './assets/fonts/opensans/stylesheet.css';
+@import './assets/fonts/Raleway/stylesheet.css';
+@import './assets/fonts/Roboto-bold/stylesheet.css';
+
+
+body{
+  font-family: 'ralewayregular';
+}
 .main{
   line-height: 2.5rem;
   height: 100vh;
@@ -15,29 +32,39 @@
   color: var(--white);   
   overflow-x: hidden;
   overflow-y: scroll;
+  background: linear-gradient(to bottom, #535354 25%, black 25% 75%, #535354 75% 100%);
+
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: center center / cover url(./assets/images/bg.png) no-repeat;
+    filter: brightness(1.1);
+  }
+  @include sm{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+  }  
   @include xs{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
   }  
-  @include sm{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
-    height: 100vh;
-    overflow: scroll;
-  }  
+
   .page{
     grid-column: 2 / 3;
-    background: var(--bg-dark);
+    //background: black;
     display: flex;
     flex-direction: column;
     line-height: 2.5rem;
     position: relative;  
 
-    @include xs{
+    @include sm{
       grid-column: 1 / 3;
       grid-row: 1 / 2;
     }
-    @include sm{
+    @include xs{
       grid-column: 1 / 3;
       grid-row: 1 / 2;
     }
@@ -45,87 +72,106 @@
 }
 
 /* animation dropdown */
-.animateDropdownMenu{
-  animation: animateDropdownMenu ease .4s .4s forwards;
+.slideUpDropdown{
+  animation: slideUpDropdown ease .8s forwards;
 }
+.slideDownDropdown{
+  animation: slideDownDropdown ease .4s .4s forwards;
+}
+
 .rotateBurger{
-  animation: rotate-burger ease .4s forwards; 
+  transition: all ease .4s;
+  transform: rotate(180deg); 
   i:nth-child(1){
-    transition: all ease .4s .2s;
-    transform: translateY(1.3rem);   
-    animation: back-in-barTop .2s ease .8s forwards
+    animation: back-in-barTop .6s ease .2s forwards
   }
   i:nth-child(2){
-    transition: all ease .1s .6s;
+    transition: all ease .1s .2s;
     opacity: 0;
   }
   i:nth-child(3){
-    transition: all ease .4s .2s;
-    transform: translateY(-1.3rem);  
-    animation: back-out-barBottom .2s ease .8s forwards
+    animation: back-out-barBottom .6s ease .2s forwards
+  }
+}
+.rotateBackBurger{
+  i:nth-child(1){
+    animation: back-out-barTop .4s ease forwards
+  }
+  i:nth-child(2){
+    opacity: 1;
+  }
+  i:nth-child(3){
+    animation: back-in-barBottom .5s ease forwards
   }
 }
 
 
 /* burger */
 .translate-burger{
-  i:nth-child(1){
-    transition: all .1s ease;
-    transform: translateX(10rem);
-  }
-  i:nth-child(2){
-    transition: all .1s ease .1s;
-    transform: translateX(10rem);    
-  }
   i:nth-child(3){
-    transition: all .1s ease .2s;
-    transform: translateX(10rem);    
-  }
-  
+    animation: translateBarBurger .4s ease .6s forwards;
+  } 
+  i:nth-child(2){
+    animation: translateBarBurger .4s ease .7s forwards;
+  } 
+  i:nth-child(1){
+    animation: translateBarBurger .4s ease .8s forwards;
+  } 
 }
 
-/* latest */
 
-.translate-latest{
-  animation: translate-latest .2s ease .3s forwards ;
+/* socials translate */
+.translate-icon-left{
+  animation: translate-socials .4s ease 1.2s forwards;
+}
+.translate-icon-right{
+  animation: translateTextRight .4s ease 1.2s forwards;
+}
+.translate-arrow-right{
+  animation: translateTextRight .4s ease 1.2s forwards;
+}
+.translate-arrow-left{
+  animation: translateText .2s ease .4s forwards;
 }
 
-/*  animation arrow  */
+/*  animation arrow Right */
 
 .rotateBarTopRight{
-  animation: rotateinverse45 .2s ease  forwards;
+  animation: rotateinverse45 .2s ease forwards;
   &::after{
-    animation: translateBarTop .2s ease .4s forwards;
+    animation: translateBarTop .2s ease .2s forwards;
   }
 }
 .rotateBarBottomRight{
   animation: rotate45 .2s ease forwards;
   &::after{
-    animation: translateBarBottom .2s ease .4s forwards;
+    animation: translateBarBottom .2s ease .2s forwards;
   }
 }
 .translateTextRight{
-  animation: translateTextRight .2s ease .6s forwards;
+  animation: translateTextRight .4s ease .4s forwards;
 }
 
+.fadeIn-content{
+  animation: fadeIn-content .1s ease 1.6s forwards ;
+}
+
+/*  animation arrow left */
+
+
 .rotate45{
-  animation: rotate45 .2s linear forwards;
+  animation: rotate45 .2s ease forwards;
   &::after{
-    animation: translateY10 .2s ease .4s forwards;
+    animation: translateY10 .2s ease .2s forwards;
   }
 }
 .rotateinverse45{
-  animation: rotateinverse45 .2s linear forwards;
+  animation: rotateinverse45 .2s ease forwards;
   &::after{
-    animation: translateX10 .2s ease .4s forwards;
+    animation: translateX10 .2s ease .2s forwards;
   }
 }
 .translateText{
-  animation: translateText .2s ease .6s forwards;
+  animation: translateText .4s ease .4s forwards;
 }
-.translate-arrow-right{
-  animation: translateTextRight .2s ease .4s forwards;
-}
-.translate-arrow-left{
-  animation: translateText .2s ease .4s forwards;
-}
+

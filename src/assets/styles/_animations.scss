@@ -7,14 +7,16 @@
     opacity: 0;
   }
 }
-@keyframes translateTextRight{
+
+@keyframes translate-socials{
   0%{
     transform: translateX(0);
   }100%{
-    transform: translateX(30rem);
+    transform: translateX(-20rem);
     opacity: 0;
   }
 }
+
 @keyframes rotateBarTopRight{
   0%{
     transform: rotate(0deg);
@@ -29,18 +31,24 @@
     transform: rotate(45deg);
   }
 }
+
+
+/*  Arrow right */
+
+
+@keyframes rotateinverse45{
+  0%{
+    transform: rotate(0deg);
+  }100%{
+    transform: rotate(45deg);
+  }
+}
+
 @keyframes translateBarTop{
   0%{
     transform: translateY(0);
   }100%{
     transform: translateX(10rem);
-  }
-}
-@keyframes translateBarBottom{
-  0%{
-    transform: translateY(0);
-  }100%{
-    transform: translateY(10rem);
   }
 }
 
@@ -51,13 +59,51 @@
     transform: rotate(-45deg);
   }
 }
-@keyframes rotateinverse45{
+@keyframes translateBarBottom{
   0%{
-    transform: rotate(0deg);
+    transform: translateY(0);
   }100%{
-    transform: rotate(45deg);
+    transform: translateY(10rem);
   }
 }
+@keyframes translateTextRight{
+  0%{
+    transform: translateX(0);
+  }100%{
+    transform: translateX(30rem);
+  }
+}
+
+@keyframes fadeIn-content{
+ from{
+   opacity: 1;
+ }to{
+   opacity: 1;
+ }
+}
+
+
+/* burger */
+
+@keyframes translateBarBurger{
+  0%{
+    transform: translateY(0);
+  }100%{
+    transform: translateX(10rem);
+  }
+}
+@keyframes translateBarBurgerReverse{
+  from{
+    transform: translateX(10rem);
+  }to{
+    transform: translateX(20rem);
+  }
+}
+
+
+
+
+
 
 @keyframes translateX10{
   0%{
@@ -90,19 +136,47 @@
 /* animation dropdown */
 
 @keyframes back-in-barTop{
-  from{
-    transform: translateY(1.3rem) rotate(0deg);
-  }to{
+  0%{
+    transform: translateY(1.3rem);
+  }50%{
+    transform: translateY(1.3rem);
+  }
+  100%{
     transform: translateY(1.3rem) rotate(45deg);
   }
 }
+@keyframes back-out-barTop{
+  0%{
+    transform: translateY(1.3rem) rotate(45deg);
+  }50%{
+    transform: translateY(1.3rem) rotate(0deg);
+  }
+  100%{
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
 @keyframes back-out-barBottom{
-  from{
-    transform: translateY(-1.3rem) rotate(0deg);
-  }to{
+  0%{
+    transform: translateY(-1.3rem);
+  }50%{
+    transform: translateY(-1.3rem);
+  }
+  100%{
     transform: translateY(-1.3rem) rotate(-45deg);
   }
 }
+@keyframes back-in-barBottom{
+  0%{
+    transform: translateY(-1.3rem) rotate(-45deg);
+  }50%{
+    transform: translateY(-1.3rem) rotate(0deg);
+  }
+  100%{
+    transform:translateY(0rem) rotate(0deg);
+  }
+}
+
 @keyframes rotate-burger{
   0%{
     transform: rotate(0deg);
@@ -122,7 +196,34 @@
   }
 }
 
-/*  Buttons languages maitriser */
+@keyframes slideUpDropdown{
+  0%{
+    //transform: translateY(100vh);
+    //opacity: 1;
+    top: 0;
+    opacity: 1;  
+  }50%{
+    top: -100vh ;
+    opacity: 1;
+  }100%{
+    top: -100vh;
+    opacity: 0;
+  }
+}
+@keyframes slideDownDropdown{
+  0%{
+    top: -100vh;
+    opacity: 1;
+  }50%{
+    top: -100vh;;
+    opacity: 1;
+  }100%{
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/*  Buttons list projets portfolio&labs */
 
 @keyframes show-lang{
   0%{
@@ -149,7 +250,7 @@
   }
 }
 
-/* load icon */
+/* loading... icon */
 
 @keyframes rotate-load{
   0%{

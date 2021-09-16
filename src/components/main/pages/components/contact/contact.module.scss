@@ -1,0 +1,108 @@
+@import '../../../../../assets/styles/media-queries';
+.containerSocials{
+  max-width: 17rem;
+}
+.contact{
+  font-family: 'open_sanslight';
+  line-height: 3rem;
+  font-size: 1.8rem;
+  color: var(--white);
+  padding: 10rem 0;
+  @include xs{
+    padding: 2rem;
+  }
+    .contactText{
+      h1{
+        font-family: 'be_vietnambold';
+        font-size: 4rem !important;
+        @include xs{
+          font-size: 3.3rem;
+        }
+      }
+      p{
+        margin-bottom: 0;
+        @include xs{
+          font-size: 1.4rem;
+          font-weight: 400;
+          margin: 1rem 0;    
+        }
+      }
+      h3{
+        letter-spacing: .2rem;
+        font-weight: bold;
+        @include xs{
+          font-size: 1.4rem;   
+        }
+      }    
+    }
+    .talk{
+      form{
+        input{
+          border: 0;
+          border-radius: 0;
+          background:var(--black);
+          border-bottom: .1rem solid var(--white);
+          outline: 0;
+          min-width: 100%;
+          font-weight: bold;
+          letter-spacing: 0.1rem;
+          font-size: 1.4rem;
+          color: var(--white);
+          margin-top: 2.8rem;
+          &::placeholder{
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--white);
+          }
+        }  
+        .btn{
+          font-family: 'open_sansbold';
+          margin: 1rem .5rem 1rem 0;
+          border: 0;
+          border-radius: .2rem;
+          color: var(--white);
+          font-size: 1.6rem;
+          padding: 1rem 2rem;
+          cursor: pointer;
+          box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+          @include xs{
+            padding: 1rem;
+            font-size: 1.4rem;
+          }
+          &:last-child{
+            background: var(--bg-btn);
+          }
+          
+        } 
+      }
+      .socials{
+        h2{
+          font-family: 'be_vietnambold';
+          font-size: 2rem;
+          @include xs{
+            font-size: 2rem;
+          }
+        }
+        .socialsList{
+          padding-top: 2rem;
+          .elem{
+            width: 5rem;
+            height: 5rem;
+            border: .1rem solid var(--white);
+            border-radius: 100%;
+            padding: 1rem;
+            cursor: pointer;
+            img{
+              max-height: 100%;
+            }
+            &:hover{
+              transition: all ease .2s;
+              background: var(--bg-btn);
+            }
+          }
+        }
+
+      }     
+    }     
+}
+

@@ -1,29 +1,43 @@
 :root{
-  --font-family: 'Montserrat', sans-serif;
-  --font-family-title:'Oswald', sans-serif;
-  --bg-dark:#302e30;
-  --bg-dark-1:#393939;
-  --bg-latest:#0055a5;
-  --color-icon:#7a7a7a;
+  --bg-dark:#535353;
+  --bg-dark-1:#535360;
+  --bg-light:#535354;
+  --bg-btn:#ce9456;
+  --color-icon:#828282;
+  --bg-site:#f1f2f6;
+  --bg-dropdown:#333;
+  --bg-dropdown-1:#323232;
+  --bg-dropdown-anim1:#1a1a1a;
+  --bg-dropdown-anim2:#2a2a2a;
+  --dropdown-text:#919191;
+  --bg-btn-s: #000;
+  --gray:#f1f2f9;
+  --gray-light:#f1f2e0;
+  --gray-dark:#dfe6e9;
   --text:#333; 
-  --red-light:#ff6b6b;
+  --black:#000;
+  --bg-header-elem-article:#faf4f4;
   --red:#ee5253;
+  --yellow:#fed330;
   --green:#10ac84;
   --green-light:#1dd1a1;
   --green-faded:#81ecec;
+  --red-light:#ff6b6b;
+  --bg-latest:#0055a5;
   --blue:#1977d2;
   --blue-1:#1977c2;
   --blue-2:#1977a2; 
   --blue-3:#1977b2;   
   --blue-light:#1cbdfd;
   --blue-faded:#60a3bc;  
-  --gray:#f1f2f6;
-  --gray-light:#f1f2f6;
-  --gray-dark:#dfe6e9;
-  --gray-portfolio:#8a8a8a;
+  --white:#ffffff;
+  --white-light:#f1f2f6;
+
+  
+
+/*   --gray-portfolio:#8a8a8a;
   --dark:#2f3542;
   --dark-light:#57606f;
-  --yellow:#fed330;
   --yellow-light:#f7b731;
   --orange-light:#fd9644;
   --white:#ffffff;
@@ -44,5 +58,5 @@
   --sidebar:#f5f5f5;
   --html:#dd4b26;
   --css:#254bdd;
-  --alerte:#ef3c00;
+  --alerte:#ef3c00; */
 }

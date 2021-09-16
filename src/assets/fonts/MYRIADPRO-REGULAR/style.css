@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'MYRIADPRO-REGULAR';
+  src: url('MYRIADPRO-REGULAR.woff2') format('woff2'),
+       url('MYRIADPRO-REGULAR.woff') format('woff');
+       font-weight: normal;
+      font-style: normal;
+}
+
+
