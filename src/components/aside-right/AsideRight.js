@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import Arrow from './arrow/Arrow';
 import Style from './asideright.module.scss';
 export default class AsideRight extends Component{
-  constructor(props){
-    super(props);
-  }
   render(){
     let content;
     if(this.props.location.pathname === "/about"){

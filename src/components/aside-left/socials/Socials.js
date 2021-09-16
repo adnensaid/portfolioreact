@@ -8,9 +8,7 @@ export default  class Socials extends Component{
   render(){
     return(
       <div 
-      className={ Style.socials+" "+this.props.classNameIconLeft}
-      onAnimationStart = { this.props.onAnimationStartArrowRight }
-      onAnimationEnd = { this.props.onAnimationEndArrowRight }
+      className={ ` ${ Style.socials } ${ this.props.classNameArrowRight ? this.props.classNameArrowRight[4] : '' } `}
       >
         <div className={ Style.socialsElem }>
           <div className={ Style.queu }></div>
