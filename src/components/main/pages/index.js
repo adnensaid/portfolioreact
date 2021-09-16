@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route ,Switch, Redirect} from 'react-router-dom';
-import { PageAbout, Portfolio, Labs, Contact, LabsCube, ProgressAnimation, SocialAnimation, Montre, ArrowAnimation, Burger, Latest, FormValidation, FieldArray, Carousel, CarouselWithForm } from './components'; 
+import { PageAbout, Portfolio, Labs, Contact, LabsCube, ProgressAnimation, SocialAnimation, Montre, ArrowAnimation, FormValidation, FieldArray, Carousel, CarouselWithForm } from './components'; 
 export default class Pages extends Component{
   render(){
     //console.log(this.props);

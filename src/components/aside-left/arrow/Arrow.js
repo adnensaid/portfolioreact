@@ -10,12 +10,14 @@ export default class Arrow extends Component{
   render(){
     return(
         <div 
-        className={ ` ${ Style.icon } ${ this.props.classNameIconLeft ? this.props.classNameIconLeft : '' } `}
-        onAnimationEnd = { this.props.onAnimationEndArrowRight }
+        className={ ` ${ Style.icon } 
+        ${ this.props.classNameArrowRight ? this.props.classNameArrowRight[4] : '' } 
+
+        `}
         >
           <NavLink
           className={ Style.iconDirection }
-          onClick={ this.onClick }
+          onClick={ e=>this.props.startStopAnimationArrowLeft(this.props.to, e) }
           to={ this.props.to } 
           >
             <div className={ ` ${ Style.barBottom } ${ this.props.classNameArrowLeft ? this.props.classNameArrowLeft[0] : '' } ` }></div>

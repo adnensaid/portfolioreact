@@ -13,13 +13,8 @@ export default class Main extends Component{
       path:'',
       path2:'',
       classNameDropdown:'',
-      classNameIconLeft:'',
-      classNameIconRight:'',
-      classNameBurger: '',
-      classNameBurger2: '',
       classNameArrowLeft:'',
       classNameArrowRight:'',
-      classNameText:'',
       showAnimation:false,
       finishedAnimation:false,
     }
@@ -57,61 +52,19 @@ export default class Main extends Component{
   startStopAnimationArrowRight = (p)=>{
     const classNameArrowRight = this.state.classNameArrowRight;
     this.setState({
-      classNameArrowRight:classNameArrowRight ? '' : ['rotateBarTopRight','rotateBarBottomRight', 'translateTextRight'],
-      path:p
+      classNameArrowRight:classNameArrowRight ? '' : ['rotateBarTopRight','rotateBarBottomRight', 'translateTextRight', 'translate-burger', 'translate-icon-left']
     })
-    this.startStopAnimationBurger();
+    //this.startStopAnimationBurger();
+    setTimeout(() => {
+      this.setState({
+        classNameArrowRight:''
+      })
+      this.props.history.push(p);
+    }, 1600);
   }
-
-  /* animation burger */
-  startStopAnimationBurger = ()=>{
-    const classNameBurger = this.state.classNameBurger;
-    this.setState({
-      classNameBurger:classNameBurger ? '' : 'translate-burger'
-    })
-    this.startStopAnimationIconLeft();
-  }  
-  startStopAnimationIconLeft = ()=>{
-    const classNameIconLeft = this.state.classNameIconLeft;
-    this.setState({
-      classNameIconLeft:classNameIconLeft ? '' : 'translate-icon-left'
-    })
-    this.startStopAnimationText();
-  }
-  startStopAnimationText = ()=>{
-    const classNameText = this.state.classNameText;
-    this.setState({
-      classNameText:classNameText ? '': 'fadeIn-content'
-    })
-  }
-
-
-
-  onAnimationStartArrowRight = ()=>{
-    this.setState({
-      showAnimation:true,
-      finishedAnimation:false
-    })
-  }
-
-  onAnimationEndArrowRight = ()=>{
-    const path = this.state.path;
-    this.setState({
-      showAnimation:false,
-      finishedAnimation:true,
-      classNameDropdown:'',
-      classNameArrowRight:'',
-      classNameBurger:'',
-      classNameIconLeft:'',
-      classNameText:''
-    })
-    console.log('fin:Rihgt');
-    this.props.history.push(path);
-
-  }
-
     /* animation Arrow left */
-    startStopAnimationArrowLeft = (p)=>{
+    startStopAnimationArrowLeft = (p, e)=>{
+      e.preventDefault();
       const classNameArrowLeft = this.state.classNameArrowLeft;
       this.setState({
         classNameArrowLeft:classNameArrowLeft ? '' : ['rotate45', 'rotateinverse45', 'translateText', 'translate-burger', 'translate-icon-right']
@@ -131,20 +84,15 @@ export default class Main extends Component{
       >
       <AsideLeftWithRouter
       startStopAnimationArrowLeft = { this.startStopAnimationArrowLeft }
-      classNameIconLeft = { this.state.classNameIconLeft }
       classNameArrowLeft = { this.state.classNameArrowLeft }
+      classNameArrowRight = { this.state.classNameArrowRight }
       />
       <PagesWithRouter
-        classNameText = { this.state.classNameText }
-        onAnimationStart = { this.onAnimationStartArrowRight }
-        onAnimationEnd = { this.onAnimationEndArrowRight }
 
       />
       <AsideRightWithRouter
         startStopAnimationArrowRight = { this.startStopAnimationArrowRight }
         classNameArrowRight = { this.state.classNameArrowRight }
-        onAnimationEndArrowLeft = { this.onAnimationEndArrowLeft }
-        classNameIconRight = { this.state.classNameIconRight }
         classNameArrowLeft = { this.state.classNameArrowLeft }
       />
       <DropdownMenu
@@ -157,12 +105,10 @@ export default class Main extends Component{
       startStopAnimation = { this.startStopAnimationDropdown }
       className={ this.state.classNameDropdown }
       classNameArrowLeft = { this.state.classNameArrowLeft }
+      classNameArrowRight = { this.state.classNameArrowRight }
       onAnimationStart = { this.onAnimationStartDropdown }
       onAnimationEnd = { this.onAnimationEndDropdown }
-      classNameBurger = { this.state.classNameBurger }
-      classNameBurger2 = { this.state.classNameBurger2 }
-      onAnimationStartArrowLeft = { this.onAnimationStartArrowLeft }
-      onAnimationEndArrowLeft = { this.onAnimationEndArrowLeft }
+
 
       />
     </div>    

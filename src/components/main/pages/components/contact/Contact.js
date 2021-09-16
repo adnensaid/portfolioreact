@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Style from './contact.module.scss';
-import { Button, Container, Form } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 import fcb from '../../../../../assets/images/socials/facebook.svg';
 import linkedin from '../../../../../assets/images/socials/linkedin.svg';
 import git from '../../../../../assets/images/socials/github.svg';
@@ -31,9 +31,9 @@ export default class Contact extends Component{
               <p>Suivez mes profils sur Twitter, GitHub et Linkedin</p>
               <div className={ Style.containerSocials }>
                 <div className={ Style.socialsList+" d-flex justify-content-between mt-4" }>
-                   <a className={ Style.elem+" d-flex align-items-center justify-content-center " } href="https://www.facebook.com/adnenso/"><img src={ fcb } /> </a>
-                   <a className={ Style.elem+" d-flex align-items-center justify-content-center " } href="https://www.linkedin.com/in/adnensaid83/"><img src={ linkedin } /> </a>
-                   <a className={ Style.elem+" d-flex align-items-center justify-content-center " } href="https://github.com/adnensaid"><img src={ git } /></a>
+                   <a className={ Style.elem+" d-flex align-items-center justify-content-center " } href="https://www.facebook.com/adnenso/"><img src={ fcb } alt='fcb' /> </a>
+                   <a className={ Style.elem+" d-flex align-items-center justify-content-center " } href="https://www.linkedin.com/in/adnensaid83/"><img src={ linkedin } alt='ln' /> </a>
+                   <a className={ Style.elem+" d-flex align-items-center justify-content-center " } href="https://github.com/adnensaid"><img src={ git } alt='git'/></a>
                 </div>
               </div>     
             </div>      

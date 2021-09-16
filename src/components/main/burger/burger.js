@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Button, Dropdown, ButtonGroup } from 'react-bootstrap';
 import Style from './burger.module.scss';
 
 export default class Burger extends Component{
@@ -17,6 +16,7 @@ export default class Burger extends Component{
         ${this.props.classNameBurger2 ? this.props.classNameBurger2 : '' }
         ${this.props.className ? this.props.className[1] : '' } 
         ${this.props.classNameArrowLeft ? this.props.classNameArrowLeft[3] : '' }
+        ${ this.props.classNameArrowRight ? this.props.classNameArrowRight[3] : '' }
         `}
         
 
