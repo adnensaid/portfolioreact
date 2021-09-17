@@ -7,8 +7,8 @@
       font-family: 'be_vietnambold';
       font-size: 4rem;
       letter-spacing: .2rem;
-      line-height: 5rem;
-      margin-bottom: 2rem;
+      line-height: 4rem;
+      //margin-bottom: 2rem;
       text-align: center;
       @include md{
         font-size: 3rem;
@@ -17,9 +17,10 @@
       @include sm{
         font-size: 3rem;
         margin-bottom: 0rem;
+        margin-top: 6rem;
       }
       @include xs{
-        font-size: 2.4rem;
+        font-size: 3rem;
         margin-bottom: 0rem;
       }
     }
@@ -41,7 +42,7 @@
         line-height: 2.6rem;
       }
       @include xs{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         line-height: 2rem;
       }
     }

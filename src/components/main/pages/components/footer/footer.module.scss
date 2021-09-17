@@ -1,6 +1,6 @@
 @import '../../../../../assets/styles/media-queries';
 .footer{
-  font-size: 1.6rem;
+  font-size: 2rem;
   max-width: 50rem;
   margin: auto;
   p{
@@ -11,6 +11,6 @@
   }
   @include xs{
     max-width: 25rem;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 }

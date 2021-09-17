@@ -8,6 +8,9 @@
   font-size: 1.8rem;
   color: var(--white);
   padding: 10rem 0;
+  @include sm{
+    padding: 2rem;
+  }
   @include xs{
     padding: 2rem;
   }
@@ -22,7 +25,7 @@
       p{
         margin-bottom: 0;
         @include xs{
-          font-size: 1.4rem;
+          font-size: 1.8rem;
           font-weight: 400;
           margin: 1rem 0;    
         }
@@ -31,7 +34,7 @@
         letter-spacing: .2rem;
         font-weight: bold;
         @include xs{
-          font-size: 1.4rem;   
+          font-size: 1.8rem;   
         }
       }    
     }

@@ -29,8 +29,8 @@
         display: block;
         width: 50%;
         height: 0.1rem;
-        background: var(--bg-dark);
-        border: 0.1rem solid var(--bg-dark);
+        background: var(--bg-light);
+        border: 0.1rem solid var(--bg-light);
         filter: brightness(.8);
         border-bottom-right-radius: 1rem;
       }
@@ -49,8 +49,8 @@
         display: block;
         width: 0.1rem;
         height: 50%;
-        background: var(--bg-dark);
-        border: 0.1rem solid var(--bg-dark);
+        background: var(--bg-light);
+        border: 0.1rem solid var(--bg-light);
         filter: brightness(.8);
         border-bottom-right-radius: 1rem;
 
@@ -65,7 +65,7 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      color: var(--bg-dark);
+      color: var(--bg-light);
       font-family: 'myriadpro-regular';
       filter: brightness(1.2);
       font-size: 2rem; 
