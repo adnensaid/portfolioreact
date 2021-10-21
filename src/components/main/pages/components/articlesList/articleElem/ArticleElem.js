@@ -26,6 +26,8 @@ export default class ArticleElem extends Component{
         href={`${ this.props.article.path }`} 
         onMouseEnter = { this.onMouseEnter }
         onMouseLeave = { this.onMouseLeave }
+        target="_blank"
+        rel="noreferrer"
       >
         <div className={ Style.articlesElemTitre+" d-flex align-items-center" }>
           <i></i>
