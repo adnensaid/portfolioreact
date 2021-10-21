@@ -13,7 +13,7 @@ const PageAbout = ()=>{
             </p>
             <div className={ Style.lienUtiles+" d-flex flex-nowrap" }>
               <button className="btn btn-primary shadow-lg rounded text-nowrap">VOIR MON CV</button>
-              <button className="btn btn-secondary shadow-lg rounded text-nowrap">LAST REACT APP</button>    
+              <button className="btn btn-secondary shadow-lg rounded text-nowrap"><a href="https://youthful-noyce-04c1bb.netlify.app" target="_blank" rel="noreferrer" style={{ color:'white' }}>LAST REACT APP</a></button>    
             </div>
           </div>
         </div>
