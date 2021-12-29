@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Style from  "../projects.module.scss";
 import Window from "./window/Window";
 
