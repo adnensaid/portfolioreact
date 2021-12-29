@@ -14,8 +14,6 @@ export default  class Socials extends Component{
               <a 
               className={ Style.socialsElemImg }
               href="https://github.com/adnensaid"
-              target="_blank"
-              rel="noreferrer"
               >
                <i className="fab fa-github-alt"></i>
               </a>
@@ -25,8 +23,6 @@ export default  class Socials extends Component{
               <div className={ Style.queu }></div>
               <a 
               href="https://www.linkedin.com/in/adnensaid83/"
-              target="_blank"
-              rel="noreferrer"
               className={ Style.socialsElemImg }
               >
                 <i className="fab fa-linkedin-in"></i>
@@ -38,8 +34,6 @@ export default  class Socials extends Component{
               <a 
               className={ Style.socialsElemImg }
               href="https://www.facebook.com/adnenso/"
-              target="_blank"
-              rel="noreferrer"
               >
                 <i className="fab fa-facebook-f"></i>
               </a>
