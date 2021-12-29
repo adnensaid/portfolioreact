@@ -1,12 +1,12 @@
 /*  Styles */
 
 @import './assets/styles/reset';
-@import './assets/styles/base';
 @import './assets/styles/variables';
 @import './assets/styles/classes';
 @import './assets/styles/media-queries';
 @import './assets/styles/utils';
 @import './assets/styles/animations';
+@import './custom.scss';
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* fonts */
@@ -18,11 +18,44 @@
 @import './assets/fonts/opensans/stylesheet.css';
 @import './assets/fonts/Raleway/stylesheet.css';
 @import './assets/fonts/Roboto-bold/stylesheet.css';
+@import './assets/fonts/Roboto-regular/stylesheet.css';
+@import './assets/fonts/Bahnschrift/stylesheet.css';
 
-
-body{
-  font-family: 'ralewayregular';
+html{
+  font-size: 62.5%;
 }
+body{
+  color: var(--text);
+  font-family: 'robotoregular';
+}
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+p{
+  font-family: 'robotoregular';
+  margin: 1rem 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin: 1rem 0;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: var(--text);
+}
+img{
+  max-width: 100%;
+}
+
 .main{
   line-height: 2.5rem;
   height: 100vh;
@@ -54,7 +87,6 @@ body{
 
   .page{
     grid-column: 2 / 3;
-    //background: black;
     display: flex;
     flex-direction: column;
     line-height: 2.5rem;

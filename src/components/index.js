@@ -1,6 +1,10 @@
-export { default as AsideRight } from './aside-right/AsideRight';
-export { default as AsideLeft } from './aside-left/AsideLeft';
-export { default as Pages } from './main/pages/index';
-export { default as DropdownMenu } from './main/dropdown-menu/DropdownMenu';
-export { default as Burger } from './main/burger/burger';
-export { default as Latest } from './main/latest/Latest';
+export { default as Header } from "./header/Header";
+export { default as Home } from "./home/Home"; 
+export { default as Portfolio } from "./portfolio/Portfolio";
+export { default as Labs } from "./labs/Labs";
+export { default as Filter } from "./filter/Filter";
+
+export { default as Contact } from "./contact/Contact";
+
+
+

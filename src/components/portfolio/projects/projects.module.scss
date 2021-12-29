@@ -1,0 +1,149 @@
+@import '../../../assets/styles/media-queries';
+
+.projects{
+  flex: 1;
+  margin-top: 20rem;
+  @include sm{
+    margin-top:18rem;
+  }
+  @include xs{
+    margin-top:14rem;
+  }
+  @include xxs{
+    margin-top:14rem;
+  }
+  .projectsContent{
+    display: flex;
+    flex-direction: column;
+    .projectsList{
+      padding: 0;
+      .projectsElem{
+        display: flex;
+        margin: 8rem 0 16rem 0;
+        @include sm{
+          margin: 4rem 0 8rem 0;
+        }
+        @include xs{
+          margin: 2rem 0 4rem 0;
+        }
+        &:nth-child(2n){
+          flex-flow: row-reverse;
+          .articleElemTexto{
+            margin-left: 4rem;
+            @include md{
+              margin-left: 0;
+            }
+            @include sm{
+              margin-left: 0;
+            }
+            @include xs{
+              margin-left: 0;
+            }
+          }
+          @include md{
+            flex-direction: column;
+            align-items: stretch;
+          }
+          @include sm{
+            flex-direction: column;
+            align-items: stretch;
+          }
+          @include xs{
+            flex-direction: column;
+            align-items: stretch;
+          }
+        }
+        &:nth-child(2n+1){
+          .articleElemTexto{
+            margin-right: 4rem;
+          }
+          @include md{
+            flex-direction: column;
+            align-items: stretch;
+            .articleElemTexto{
+              margin-left: 0rem;
+            }    
+          }  
+          @include sm{
+            flex-direction: column;
+            align-items: stretch;
+            .articleElemTexto{
+              margin-left: 0rem;
+            }    
+          }
+          @include xs{
+            flex-direction: column;
+            align-items: stretch;
+            .articleElemTexto{
+              margin-left: 0rem;
+            }    
+          }
+        }
+        .articleElemTexto{
+          flex: 1;
+          .date{
+            border-radius: 5rem;
+            font-size: 1.6rem;
+            font-family: 'be_vietnambold';
+            color: var(--gray-300);
+            @include l{
+              font-size: 1.45rem;
+            }
+            @include sm{
+              font-size: 1.45rem;
+            }
+            @include xs{
+              font-size: 1.3rem;
+            }
+            @include xxs{
+              font-size: 1.1rem;
+            }  
+          }
+          .linkArticle{
+            display: flex;
+            padding: 2rem 0;
+            font-family: 'be_vietnambold';
+            @include l{
+              padding: 1rem 0;
+            }
+            @include sm{
+              padding: 1rem 0;
+            }
+            @include xs{
+              padding: 1rem 0;
+            }
+            li{
+              margin-right: 1rem;
+              a{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 1.6rem;
+                cursor: pointer;
+                padding: 0 0 2rem 0;
+                transition: all cubic-bezier(.25,.8,.25,1) .6s;
+                @include l{
+                  font-size: 1.4rem;
+                }
+                @include sm{
+                  font-size: 1.4rem;
+                }
+                @include xs{
+                  font-size: 1.3rem;
+                }
+                @include xxs{
+                  font-size: 1.1rem;
+                }
+                &:hover{
+                  transition: all cubic-bezier(.25,.8,.25,1) .4s;
+                  transform: translateY(-1rem);
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

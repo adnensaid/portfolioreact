@@ -1,0 +1,34 @@
+@import '../../../assets/styles/media-queries';
+
+.navCategories{
+  background:var(--gray-300);
+  border-radius: .5rem;
+  overflow:hidden;
+  //margin-bottom: 8rem;
+  position: sticky;
+  top: 14rem;
+  z-index: 1;
+  .navLink{
+    padding:1.2rem 0;
+    overflow:hidden;
+    color:var(--color-title);
+    font-size:2.4rem;
+    font-family:'be_vietnammedium';
+    border-radius: none !important;
+    &:hover, &:focus{
+      color: var(--white) !important;    
+    }
+    @include sm{
+      font-size: 1.8rem;
+      padding: 1rem 0;
+    }
+    @include xs{
+      font-size: 1.4rem;
+      padding: .8rem 0;
+    }
+    @include xxs{
+      font-size: 1.1rem;
+      padding: .8rem 0;
+    }
+  }
+}

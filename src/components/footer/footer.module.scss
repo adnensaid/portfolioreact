@@ -1,0 +1,14 @@
+@import '../../assets/styles/media-queries';
+.footer{
+  font-size: 2rem;
+  background: var(--secondary);
+  color: var(--primary);
+  margin-top: 8rem;
+  padding: 2rem 0;
+  p{
+    font-family: 'open_sanslight';
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+}

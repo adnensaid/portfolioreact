@@ -1,0 +1,67 @@
+.cardTop{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  //perspective: 1000rem;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 40rem;
+  
+  //transform: rotate(45deg);
+  .cardTopImgList{
+    .cardImg{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transform-style: preserve-3d;
+      backface-visibility: hidden;    
+      &:nth-child(1){
+        transform: translateZ(20rem);
+      }
+      &:nth-child(2){
+        transform: rotateY(-90deg) translateZ(20rem);
+      }
+      &:nth-child(3){
+        transform: rotateX(-90deg) translateZ(20rem);
+      }
+      &:nth-child(4){
+        transform: rotateX(90deg) translateZ(20rem);
+      }
+      &:nth-child(5){
+        transform: rotateX(180deg) translateZ(20rem) rotate(180deg);
+      }
+      &:nth-child(6){
+        transform: rotateY(90deg) translateZ(20rem);
+      }
+      img{
+        max-height: 100%;
+      }
+      i{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+
+        &:nth-child(1){
+          background: var(--gray);
+          transform:  translateZ(25px);
+        }
+        &:nth-child(2){
+          background: var(--red);
+          transform: rotateX(-90deg) translateZ(25px);
+        }
+        &:nth-child(3){
+          background: var(--green);
+          transform: rotateX(180deg) translateZ(25px);
+        }
+        &:nth-child(4){
+          background: var(--gray);
+          transform: rotateX(90deg) translateZ(25px);
+
+        }
+      }
+    }   
+  }
+}

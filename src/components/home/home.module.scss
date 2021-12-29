@@ -1,0 +1,129 @@
+@import '../../assets/styles/media-queries';
+  .about{
+    flex: 1;
+    background: center center / cover url(../../assets/images/home2.jpg) no-repeat;
+    display: grid;
+    grid-template-columns: 15rem 1fr 15rem;
+    align-items: center;
+    position: relative;
+    @include md{
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      padding: 20rem 0 2rem 0;
+      align-items: stretch;
+    }
+    @include sm{
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      padding: 20rem 0 2rem 0;
+      align-items: stretch;
+    }
+    @include xs{
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      padding: 18rem 0 2rem 0;
+      align-items: stretch;
+    }
+    @include xxs{
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      padding: 16rem 0 2rem 0;
+      align-items: stretch;
+    }
+    .filter{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: var(--primary);
+      opacity: .8;
+    }
+    .intro{
+      justify-self: center;
+      @include md{
+        grid-row: 1 / 2;
+        justify-self: stretch;
+      }  
+      @include sm{
+        grid-row: 1 / 2;
+        justify-self: stretch;
+      }
+      @include xs{
+        grid-row: 1 / 2;
+        justify-self: stretch;
+      }
+      .introContent{
+        display: flex;
+        flex-direction: column;
+        color: var(--white);
+        position: relative;
+        .title{
+          font-family: 'be_vietnamsemibold';
+          font-size: 4.6rem;
+          letter-spacing: .2rem;
+          line-height: 5.6rem;
+          font-weight: 900;
+          margin-bottom: 1rem;
+          strong{
+            color: var(--secondary);
+          }
+          @include xxs{
+            font-size: 3.7rem; // 80%
+            line-height: 4.5rem;
+          }
+        }
+        .text{
+          margin: 1rem 0;
+          max-width: 60rem;
+          font-size: 2.6rem;
+          line-height: 3.8rem;
+          strong{
+            font-family: 'MYRIADPRO-REGULAR', sans-serif;
+          }
+          @include xxs{
+            font-size: 2.1rem;
+            line-height: 3.1rem;
+          }
+        }
+        .lienUtiles{
+          display: flex;
+          justify-content: flex-start;
+
+        }
+      }      
+    }
+    .arrow{
+      justify-self: end;
+      display: flex;
+      align-items: center;
+      z-index: 0;
+      transition: all ease .4s;
+      &:hover{
+        transition: all ease .4s;
+        span{
+          color: var(--secondary);
+        }
+        i{
+          color: var(--white);
+        }
+      }
+      span{
+        color: var(--white);
+        font-family: 'open_sansbold';
+        padding: 0 1rem;
+        font-size: 1.2rem;
+      }
+      i{
+        font-size: 4rem;
+        color: var(--secondary);  
+      }
+      @include md{
+        display: none;
+      }  
+      @include sm{
+        display: none;
+      }      
+      @include xs{
+        display: none;
+      }
+    }
+}

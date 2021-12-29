@@ -1,0 +1,83 @@
+@import "./assets/styles/media-queries";
+$primary:#E2C081;// #01204D;
+$secondary:white;
+$danger: #ff4136;
+@import 'bootstrap';
+
+#btn-secondary.btn-secondary{
+  a{
+    color: var(--primary);
+    text-decoration: none;
+  }
+} 
+#btn-primary.btn, #btn-secondary.btn{
+  font-family: 'be_vietnamextrabold';
+  margin: 1rem 1rem 1rem 0;
+  border: none;
+  border-radius: 30rem;
+  font-size: 1.8rem;
+  padding: 1.3rem 2.2rem;
+  transition: all ease .2s;
+  &:hover{
+    transition: all ease .2s;
+    transform: scale(1.1);
+  }
+  @include xxs{
+    padding:0.8rem 1rem;
+  }
+}
+
+@include md{
+  #navbarNav{
+    position: absolute;
+    width: 80%;
+    top:0;
+    left: 0;
+    background: var(--white);
+    z-index: 1;
+    .navbar-nav .nav-item{
+      padding: 1rem 0;
+      border-bottom: .1rem solid var(--primary);  
+      a.nav-link{
+        border-radius: 0;
+        color: var(--primary) !important;
+      }
+    } 
+  }    
+}
+@include sm{
+  #navbarNav{
+    position: absolute;
+    width: 80%;
+    top:0;
+    left: 0;
+    background: var(--white);
+    z-index: 1;
+    .navbar-nav .nav-item{
+      padding: 1rem 0;
+      border-bottom: .1rem solid var(--primary);  
+      a.nav-link{
+        border-radius: 0;
+        color: var(--primary) !important;
+      }
+    } 
+  }    
+}
+@include xs{
+  #navbarNav{
+    position: absolute;
+    width: 80%;
+    top:0;
+    left: 0;
+    background: var(--white);
+    z-index: 1;
+    .navbar-nav .nav-item{
+      padding: 1rem 0;
+      border-bottom: .1rem solid var(--primary);  
+      a.nav-link{
+        border-radius: 0;
+        color: var(--primary) !important;
+      }
+    } 
+  }    
+}

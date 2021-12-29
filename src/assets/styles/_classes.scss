@@ -1,68 +1,111 @@
-  .btn-success, .btn-success.active, .btn-success:active, .show > .btn-success.dropdown-toggle{
-    background-color: transparent;
-    border: none;
-  }  
-
-/* window */
-.window{
-  background: var(--gray);
-  min-height: 40rem;
-  display: flex;
-  flex-direction: column;  
-  .window-titre{
-    position: relative;
-    padding: 0.5rem;
-    background: var(--dark);
-    i{
-      display: block;
-      width: 1.2rem;
-      height: 1.2rem;
-      background-color: var(--red);
-      border-radius: 100%;  
-      position: relative;
-      &::before{
-        content: "";
-        position: absolute;
-        right: -1.4rem;
-        width: 100%;
-        height: 100%;
-        background-color: var(--yellow);
-        border-radius: 100%;  
-      }
-      &::after{
-        content: "";
-        position: absolute;
-        right: -2.8rem;
-        width: 100%;
-        height: 100%;
-        background-color: var(--green);
-        border-radius: 100%;  
-      } 
-    } 
-    p{
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: 0;
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--gray);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }      
-  }  
-  .window-content{
-    flex: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;    
+@import "../../assets/styles/media-queries";
+.hidden{
+  display: none;
+}
+.container{
+  max-width: 110rem;
+  margin: auto;
+}
+.underline{
+  width: 50%;
+  height: .2rem;
+  background: var(--secondary);
+  margin: 1rem 0;
+}
+#navbar .active{
+  background: #E2C081;
+  color: black !important;
+}    
+#pills-contact-tab.active{
+  background: var(--color-title);
+  color: var(--white) !important;
+}
+.title-secondary{
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+  color: var(--color-title);
+  font-family: 'Bahnschrift';
+  letter-spacing: .1rem;
+  margin-bottom: 4rem;
+  @include l{
+    font-size: 3.2rem;
+    line-height:4.1rem;
+    margin-bottom: 1rem;
+  }
+  @include sm{
+    font-size: 3.2rem;
+    line-height:4.1rem;
+    margin-bottom: 1rem;
+  }
+  @include xs{
+    font-size: 2.8rem;
+    line-height:3.7rem;
+    margin-bottom: 1rem;
+  }
+  @include xxs{
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+    margin-bottom: 1rem;
   }
 }
+.title-page{
+  font-size: 7.2rem;
+  font-family: 'be_vietnamextrabold';  
+  line-height: 7.2rem;
+  color: var(--gray-300);
+  margin-bottom: 8rem;
+  letter-spacing: .1rem;
+  text-align: center;
+  @include md{
+    text-align: start;
+  }
+  @include sm{
+    font-size: 6.5rem; // 90 %
+    line-height: 6.5rem;
+    margin-bottom: 4rem;
+    text-align: start;
+  }
+  @include xs{
+    font-size: 5.7rem; // 80 %
+    margin-bottom: 2rem;
+    text-align: start;
+  }
+  @include xxs{
+    font-size: 5rem; // 70%
+  }
+}
+.paragraph{
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  font-family: 'robotoregular';
+  max-width: 50rem;
+  color: var(--color-text);
+  max-height: calc(3.8rem * 4);
+  overflow: hidden;
+  @include l{
+    font-size: 2.1rem;
+    line-height: 3.4rem;
+    max-height: calc(3rem * 4);
+    max-height: calc(3.4rem * 4);
+  }
+  @include sm{
+    font-size: 2.1rem;
+    line-height: 3.4rem;
+    max-height: calc(3rem * 4);
+    max-height: calc(3.4rem * 4);
+  }
+  @include xs{
+    font-size: 1.9rem;
+    line-height: 3rem;
+    max-height: calc(3rem * 4);
+  }
+  @include xxs{
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+    max-height: calc(2.7rem * 4);
 
+  }
+}
 /* text color */
 .text-dark{
   color: var(--dark);
@@ -97,36 +140,6 @@
   &::after{
     content: "\BB";
     padding: 0 0.5rem;
-  }
-}
-
-/* buttons */
-
-.btn{
-  border: 0;
-  margin: 2rem 0;
-  outline: 0;
-  cursor: pointer;
-
-  &-primary{
-    background: var(--green);
-    padding: 1rem 2rem;
-    font-weight: 700;
-    border: none;
-    border-radius: 0.5rem;
-    color: var(--white);
-  }
-  &-det{
-    background: linear-gradient(to top, var(--pink) 50%, var(--background) 50% );
-    padding: 1rem;
-  }
-  &-small{
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    max-width: 10rem;
-  }
-  &:disabled{
-    opacity: .5;
   }
 }
 
