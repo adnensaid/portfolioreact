@@ -5,21 +5,20 @@
   font-family: 'be_vietnamextrabold';
   background: var(--primary);
   color: white;
-  padding: 1rem 0;
+  padding: 4.5rem 0;
+  @include sm{
+    padding: 2rem 0;
+  }
+  @include xs{
+    padding: 2rem 0;
+  }
   .logo{
     img{
-      width: 8rem;
-      border: .1rem solid #E2C081;
+      max-width: 2.8rem;
+      //border: .1rem solid #E2C081;
       border-radius: 100%;    
     }
     position: relative;
-    &::after{
-      content: "Adnen said";
-      position: absolute;
-      bottom: -3rem;
-      font-size: 1.6rem;
-      color: var(--secondary);  
-    }
   }
   .navItem{
     margin: 0 0 0 1rem;
@@ -42,64 +41,29 @@
     }
   }
   .navbarToggler{
-    background: var(--white) ;
     width: 5rem;
     height: 5rem;
     border-radius: 100%;
-    color: var(--white);    
+    .navbarTogglerIcon{
+      height: .1rem;
+      background: var(--white);
+      display: block;
+      position: relative;
+      &::before, &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        background:var(--white);
+      }
+      &::before{
+        top: 1.1rem;
+      }
+      &::after{
+        bottom: 1.1rem;
+      }
+    }
   }
 }
-/* @include md{
-  #navbarNav{
-    position: absolute;
-    width: 80%;
-    top:0;
-    left: 0;
-    background: var(--white);
-    z-index: 1;
-    .navbar-nav .nav-item{
-      padding: 1rem 0;
-      border-bottom: .1rem solid var(--primary);  
-      a.nav-link{
-        border-radius: 0;
-        color: var(--primary) !important;
-      }
-    } 
-  }    
-}
-@include sm{
-  #navbarNav{
-    position: absolute;
-    width: 80%;
-    top:0;
-    left: 0;
-    background: var(--white);
-    z-index: 1;
-    .navbar-nav .nav-item{
-      padding: 1rem 0;
-      border-bottom: .1rem solid var(--primary);  
-      a.nav-link{
-        border-radius: 0;
-        color: var(--primary) !important;
-      }
-    } 
-  }    
-}
-@include xs{
-  #navbarNav{
-    position: absolute;
-    width: 80%;
-    top:0;
-    left: 0;
-    background: var(--white);
-    z-index: 1;
-    .navbar-nav .nav-item{
-      padding: 1rem 0;
-      border-bottom: .1rem solid var(--primary);  
-      a.nav-link{
-        border-radius: 0;
-        color: var(--primary) !important;
-      }
-    } 
-  }    
-} */
+

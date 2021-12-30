@@ -3,22 +3,21 @@
   .socialsContent{
     display: flex;
     flex-direction: column;
-    border-top-right-radius: 100%;
-    border-bottom-right-radius: 100%;
     @include md{
-      border-top-right-radius: 0%;
-      border-bottom-right-radius: 0%;
       flex-direction: row;
+      align-items: center;
+      justify-content: center;
     }
     @include sm{
       flex-direction: row;
-      align-self: flex-start;
+      align-items: center;
+      justify-content: center;
     }
     @include xs{
       flex-direction: row;
-      align-self: flex-start;
+      align-items: center;
+      justify-content: center;
     }
-  
     .socialsElem{
       width: 5rem;
       height: 5rem;
@@ -30,20 +29,7 @@
       margin-bottom:.2rem;
       border-top-right-radius: 100%;
       border-bottom-right-radius: 100%;
-      @include md{
-        border-radius: 100%;
-        margin-right: 2rem;
-      }
-      @include sm{
-        border-radius: 100%;
-        margin-right: 2rem;
-  
-      }
-      @include xs{
-        border-radius: 100%;
-        margin-right: 2rem;
-        margin-top: 1rem;
-      }
+      background: var(--secondary);
       .socialsElemImg{
         position: absolute;
         width: 100%;
@@ -59,20 +45,8 @@
           max-height: 100%;
         }
         i{
-          color:black;
-          font-size: 3rem;
-        }
-        @include md{
-          border-radius: 100%;
-        }
-        @include sm{
-          border-radius: 100%;
-        }
-        @include xs{
-          border-radius: 100%;
-        }
-        @include xxs{
-          border-radius: 100%;
+          color:var(--primary);
+          font-size: 2.5rem;
         }
       }
       .queu{
@@ -82,14 +56,89 @@
         background: var(--white);  
         border-top-right-radius: 100%;
         border-bottom-right-radius: 100%;
-        @include md{
-          border-radius: 100%;
+      }
+      @include md{
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        margin: 0;        
+        flex: 1;
+        padding: 5rem 0;
+        .socialsElemImg{
+          border-top-right-radius: 0%;
+          border-bottom-right-radius: 0%;
+          background: none;
+          i{
+            color: var(--primary);
+          }
         }
-        @include sm{
-          border-radius: 100%;
+        .queu{
+          border-top-right-radius: 0%;
+          border-bottom-right-radius: 0%;
+          background: none;
         }
-        @include xs{
-          border-radius: 100%;
+        &:nth-child(2){
+          .socialsElemImg{
+            background: var(--primary);
+            i{
+              color: var(--secondary);
+            }
+          }
+        }
+      }
+      @include sm{
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        margin: 0;        
+        flex: 1;
+        padding: 5rem 0;
+        .socialsElemImg{
+          border-top-right-radius: 0%;
+          border-bottom-right-radius: 0%;
+          background: var(--secondary);
+          i{
+            color: var(--primary);
+          }
+        }
+        .queu{
+          border-top-right-radius: 0%;
+          border-bottom-right-radius: 0%;
+          background: var(--primary);
+        }
+        &:nth-child(2){
+          .socialsElemImg{
+            background: var(--primary);
+            i{
+              color: var(--secondary);
+            }
+          }
+        }
+      }
+      @include xs{
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        margin: 0;        
+        flex: 1;
+        padding: 5rem 0;
+        .socialsElemImg{
+          border-top-right-radius: 0%;
+          border-bottom-right-radius: 0%;
+          background: var(--secondary);
+          i{
+            color: var(--primary);
+          }
+        }
+        .queu{
+          border-top-right-radius: 0%;
+          border-bottom-right-radius: 0%;
+        background: var(--primary);
+        }
+        &:nth-child(2){
+          .socialsElemImg{
+            background: var(--primary);
+            i{
+              color: var(--secondary);
+            }
+          }
         }
       }
       &:hover{

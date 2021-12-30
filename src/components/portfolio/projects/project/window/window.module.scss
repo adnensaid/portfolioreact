@@ -15,6 +15,7 @@
     align-items: center;
     font-family: 'be_vietnambold';
     background: var(--color-title);
+    background: linear-gradient(to left , var(--primary) 10%, #2f3640 90%);
     position: relative;
     padding:1.2rem 0rem;
     @include md{

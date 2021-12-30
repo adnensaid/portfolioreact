@@ -7,9 +7,9 @@ export default  class Socials extends Component{
       <div 
       className={ Style.socials }
       >
-        <div className="container">
           <div className={ Style.socialsContent }>
             <div className={ Style.socialsElem }>
+              <div className="filter"></div>
               <div className={ Style.queu }></div>
               <a 
               className={ Style.socialsElemImg }
@@ -40,7 +40,6 @@ export default  class Socials extends Component{
             </div>
           </div>
         </div>
-      </div>    
     )        
   }
 }

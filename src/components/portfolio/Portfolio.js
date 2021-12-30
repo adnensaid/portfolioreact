@@ -17,7 +17,7 @@ export default class Portfolio extends Component{
         projects: dataProjects,
         loaded:true
       })
-    }, 100);
+    }, 0);
   }
   setCategory = (category)=>{
     this.setState({
