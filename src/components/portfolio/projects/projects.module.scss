@@ -7,10 +7,10 @@
     margin-top:18rem;
   }
   @include xs{
-    margin-top:14rem;
+    margin-top:10rem;
   }
   @include xxs{
-    margin-top:14rem;
+    margin-top:10rem;
   }
   .projectsContent{
     display: flex;
@@ -19,15 +19,16 @@
       padding: 0;
       .projectsElem{
         display: flex;
+        flex-direction: row;
         margin: 8rem 0 16rem 0;
         @include sm{
           margin: 4rem 0 8rem 0;
         }
         @include xs{
-          margin: 2rem 0 4rem 0;
+          margin: 3rem 0 4rem 0;
         }
         &:nth-child(2n){
-          flex-flow: row-reverse;
+          flex-flow: row;
           .articleElemTexto{
             margin-left: 4rem;
             @include md{
@@ -41,15 +42,15 @@
             }
           }
           @include md{
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: stretch;
           }
           @include sm{
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: stretch;
           }
           @include xs{
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: stretch;
           }
         }
@@ -58,21 +59,21 @@
             margin-right: 4rem;
           }
           @include md{
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: stretch;
             .articleElemTexto{
               margin-left: 0rem;
             }    
           }  
           @include sm{
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: stretch;
             .articleElemTexto{
               margin-left: 0rem;
             }    
           }
           @include xs{
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: stretch;
             .articleElemTexto{
               margin-left: 0rem;
@@ -81,6 +82,15 @@
         }
         .articleElemTexto{
           flex: 1;
+          @include md{
+            margin-top: 2rem;
+          }
+          @include sm{
+            margin-top: 2rem;
+          }
+          @include xs{
+            margin-top: 2rem;
+          }
           .date{
             border-radius: 5rem;
             font-size: 1.6rem;

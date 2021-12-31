@@ -1,14 +1,49 @@
 @import '../../assets/styles/media-queries';
 .footer{
-  font-size: 2rem;
-  background: var(--secondary);
+  background: var(--gray-400);
   color: var(--primary);
-  margin-top: 8rem;
   padding: 2rem 0;
   p{
     font-family: 'open_sanslight';
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
     font-size: 1.4rem;
+    margin: 1rem 0;
+    padding: 0;
+  }
+  .mail{
+    text-align: center;
+    font-weight: bold;
+    color: var(--secondary);
+    font-size: 1.8rem;
+    margin: 0 0 2rem 0;
+  }
+  .logo{
+    text-align: center;
+    img{
+      max-width: 4rem;
+    }
+  }
+  .SocialsList{
+    margin-bottom: 2rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li{
+      width: 5rem;
+      height: 5rem;
+      margin: 0 1rem;
+      border: .1rem solid var(--white);
+      border: .1rem solid var(--gray-300);
+      background: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+      i{
+        font-size: 2rem;
+      }
+    }
   }
 }
