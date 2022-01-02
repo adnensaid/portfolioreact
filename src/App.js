@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './index.scss';
-import { Header, Home, Portfolio, Labs, Contact } from './components';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { Header, Home, Portfolio, Labs, Contact, Footer } from './components';
+import { BrowserRouter as Router, Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 const FadeIn = (props)=>(
@@ -16,12 +16,13 @@ const ComposantFading = ({ component: Component, ...rest }) => (
     </FadeIn>
   )} />
 )
+const HeaderWithRouter = withRouter(Header);
 export default class App extends Component{
   render(){
     return(
       <Router>
         <div className="App">
-          <Header />
+          <HeaderWithRouter />
           <Switch>
             <ComposantFading path="/test" component={Portfolio} />
             <Route path="/home" component={Home} />

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ButtonCategories from "../buttoncategories/ButtonCategories";
+import ButtonCategories from "../buttonCategories/ButtonCategories";
 import Project from "./project/Project";
 import Style from "./projects.module.scss";
 export default class Projects extends Component{
@@ -7,21 +7,26 @@ export default class Projects extends Component{
     let projects = this.props.state.projects; 
     const setCategory = this.props.setCategory;
     const displayCategory = this.props.state.displayCategory;
+    let result;
+    if (displayCategory === "TOUS") {
+      result = projects.filter(p=>p);
+    }else{
+      result = projects.filter(p=>p.lang.includes(displayCategory));
+    }
     return(
-      <div className={ Style.projects+" projects" }>
+      <div className={ Style.projects }>
         <div className="container">
-          <h2 className="title-page">PORTFOLIO</h2>
-          <p className={ Style.text }> Utilisez le filtre pour afficher tous les projets par compétence. </p>
+          <h2 className="title-page">LABS</h2>
           <div className={ Style.projectsContent }>
+          <p className={ Style.text }> Utilisez le filtre pour afficher tous les projets par compétence. </p>
             <ButtonCategories 
             projects = { projects } 
             setCategory = { setCategory }
             />    
             <ul className={ Style.projectsList }>
               {
-              projects.filter(({category}) =>
-                displayCategory === category || displayCategory === "TOUS"
-              ).map((project) =>(
+                
+              result.map((project) =>(
                 <Project 
                 key={`ProductItems-${project.title}`}
                 project={project}

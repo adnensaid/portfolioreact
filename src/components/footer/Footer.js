@@ -15,7 +15,7 @@ const Footer = ()=>{
         <li><a href="https://www.linkedin.com/in/adnensaid83/"><i className="fab fa-linkedin-in"></i></a></li>
         <li><a href="https://www.facebook.com/adnenso/"><i className="fab fa-facebook-f"></i></a></li>
       </ul>
-      <p>Copyright © 2021 Said Adnen | Tous droits réservés</p>
+      <p>Copyright © 2021 Said Adnen</p>
     </footer>
   )
 }

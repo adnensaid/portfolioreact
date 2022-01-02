@@ -1,26 +1,21 @@
 @import '../../../assets/styles/media-queries';
-
 .projects{
   flex: 1;
-  margin-top: 20rem;
-  @include sm{
-    margin-top:18rem;
-  }
-  @include xs{
-    margin-top:10rem;
-  }
-  @include xxs{
-    margin-top:10rem;
+  padding: 16rem 0 5rem 0;
+  .text{
+    font-size: 2rem;
+    color: var(--dark);
+    letter-spacing: .1rem;
+    margin: 2rem 0 4rem 0;
   }
   .projectsContent{
-    display: flex;
-    flex-direction: column;
+    flex: 1;
     .projectsList{
       padding: 0;
       .projectsElem{
         display: flex;
         flex-direction: row;
-        margin: 8rem 0 16rem 0;
+        margin: 5rem 0 16rem 0;
         @include sm{
           margin: 4rem 0 8rem 0;
         }
@@ -28,7 +23,7 @@
           margin: 3rem 0 4rem 0;
         }
         &:nth-child(2n){
-          flex-flow: row;
+          flex-flow: row-reverse;
           .articleElemTexto{
             margin-left: 4rem;
             @include md{
@@ -55,6 +50,7 @@
           }
         }
         &:nth-child(2n+1){
+          flex-flow: row;
           .articleElemTexto{
             margin-right: 4rem;
           }
@@ -152,7 +148,6 @@
             }
           }
         }
-
       }
     }
   }

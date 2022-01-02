@@ -27,7 +27,6 @@ const ButtonCategories = (props) => {
             role="tab" 
             aria-controls="pills-contact" 
             aria-selected="false"
-            style={{ borderRadius:0 }}
           >
             {category}
           </button>    

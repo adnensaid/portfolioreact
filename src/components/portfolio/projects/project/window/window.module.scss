@@ -8,15 +8,14 @@
   &:hover{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);    
   }
-  border: .1rem solid var(--gray-200);
   .articlesElemTitre{
     display: grid;
     grid-template-columns: 5.1rem 1fr;
     align-items: center;
     font-family: 'be_vietnambold';
-    border-bottom: .2rem solid var(--gray);
     position: relative;
-    padding:1.2rem 0rem;
+    padding:.5rem 0rem;
+    background: var(--light);
     @include md{
       padding: .8rem .5rem;
     }

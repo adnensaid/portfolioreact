@@ -3,8 +3,6 @@
   font-size: 1.6rem;
   line-height: 4rem;
   font-family: 'be_vietnamextrabold';
-  background: var(--primary);
-  color: white;
   padding: 4.5rem 0;
   @include sm{
     padding: 2rem 0;
@@ -15,7 +13,6 @@
   .logo{
     img{
       max-width: 2.8rem;
-      //border: .1rem solid #E2C081;
       border-radius: 100%;    
     }
     position: relative;
@@ -26,27 +23,20 @@
       padding: .5rem 2rem ;
       border-radius: 30rem;
       letter-spacing: .2rem;
-      color: var(--white);
       outline: 0;
+      border: .1rem solid transparent;
     }  
     & > a:hover{
-      background: var(--secondary);
-      color: var(--primary) !important;
-    }
-    & > a:focus{
-      background: var(--secondary);
-      color: var(--primary) !important;
-      border: none !important;
-
+      border: .1rem solid var(--secondary);
     }
   }
   .navbarToggler{
     width: 5rem;
     height: 5rem;
-    border-radius: 100%;
+    border: none;
     .navbarTogglerIcon{
       height: .1rem;
-      background: var(--white);
+      background: var(--dark);
       display: block;
       position: relative;
       &::before, &::after{
@@ -55,7 +45,7 @@
         width: 100%;
         height: 100%;
         left: 0;
-        background:var(--white);
+        background:var(--dark);
       }
       &::before{
         top: 1.1rem;

@@ -3,10 +3,10 @@
 .navCategories{
   //background:var(--gray-300);
   background: var(--primary);
-  background: linear-gradient(to left , var(--primary) 10%, #2f3640 90%);
+  //background: linear-gradient(to left , var(--primary) 10%, #2f3640 90%);
+  background: var(--light);
   border-radius: .5rem;
   overflow:hidden;
-  //margin-bottom: 8rem;
   position: sticky;
   top: 14rem;
   z-index: 1;
@@ -19,13 +19,12 @@
   .navLink{
     padding:1.2rem 0;
     overflow:hidden;
-    color:var(--color-title);
-    color: var(--white);
-    font-size:2.4rem;
+    color: var(--color-title);
+    font-size:2.2rem;
     font-family:'be_vietnammedium';
     border-radius: none !important;
     &:hover, &:focus{
-      color: var(--white) !important;    
+      color: var(--color-title);
     }
     @include sm{
       font-size: 1.8rem;
