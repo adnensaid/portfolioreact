@@ -6,7 +6,7 @@ const Project = (props)=>{
     <div className={ Style.projectElem+" card bg-light" }>
       <img src={ props.project.img } className="card-img-top" alt="progress" />
       <div className="card-body d-flex align-items-center justify-content-center">
-        <h5 className="card-title my-2" style={{ color:'var(--color-title)', fontSize:'1.6rem' }}> { props.project.title } </h5>
+        <h5 className={ Style.cardTitle+" card-title" }> { props.project.title } </h5>
       </div>
     </div>
   )

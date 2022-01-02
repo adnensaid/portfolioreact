@@ -1,0 +1,180 @@
+@import '../../assets/styles/media-queries';
+.contact{
+  flex: 1;
+  font-family: 'robotoregular';
+  padding: 16rem 0 5rem 0;
+  @include sm{
+    padding: 10rem 0 5rem 0;
+  }
+  @include xs{
+    padding: 10rem 0 5rem 0;
+  }  
+  @include xxs{
+    padding: 8rem 0 5rem 0;
+  }  
+  .contactContent{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 8rem 0 0 0;
+    @include md{
+      flex-direction: column;
+    }
+    @include sm{
+      flex-direction: column;
+      margin: 4rem 0 0 0;
+    }
+    @include xs{
+      flex-direction: column;
+      margin: 4rem 0 0 0;
+    }
+    @include xxs{
+      flex-direction: column;
+      margin: 2rem 0 0 0;
+    }
+    .contactForm{
+      flex: 1;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      .paragraphContact{
+        max-width: 52rem;
+        color: var(--color-title);
+        font-size: 2rem;
+        line-height: 3rem;
+        @include sm{
+          padding-right: 2rem;
+          font-size: 1.6rem;
+          line-height: 2rem;
+        }
+        @include xs{
+          padding-right: 2rem;
+          font-size: 1.6rem;
+          line-height: 2rem;
+        }
+      } 
+      form{
+        margin-top: 4rem;
+        @include md{
+          margin-top: 2rem;
+        }
+        @include sm{
+          margin-top: 2rem;
+        }
+        @include xs{
+          margin-top: 2rem;
+        }
+        input, textarea{
+          padding:2rem 0 2rem 2rem;
+          max-width: 48rem;
+          border: .1rem solid var(--gray-300);
+          font-size: 2rem;
+          @include sm{
+            padding: 1rem 0 1rem 1rem;
+          }
+          @include xs{
+            padding: 1rem 0 1rem 1rem;
+          }
+          &::placeholder{
+            color: var(--gray-300);
+            @include sm{
+              font-size: 1.6rem;
+              padding-left: 1rem;
+            }
+            @include xs{
+              font-size: 1.6rem;
+              padding-left: 1rem;
+            }
+          }
+        }
+        input{
+          border-radius: 30rem;
+        }
+        textarea{
+          border-radius: 5rem;
+        }
+      }  
+
+    }
+    .contactCordinate{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      margin-left: 4rem;
+      @include md{
+        order: -1;
+        margin-left: 0;
+      }
+      @include sm{
+        order: -1;
+        margin-left: 0;
+
+      }
+      @include xs{
+        order: -1;
+        margin-left: 0;
+      }
+      .contactImg{
+        border: .1rem solid var(--gray-300);
+        border-radius: .5rem;
+        padding: 2rem;
+      }
+      .contactCordinateText{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+        .contactCordinateTextElem{
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          i{
+            font-size: 3rem;
+            margin-right: 3rem;
+            color: var(--color-title);
+            @include sm{
+              margin-right: 1rem;
+              font-size: 2rem;
+              line-height: 2.4rem;
+            }
+            @include xs{
+              margin-right: 1rem;
+              font-size: 2rem;
+              line-height: 2.4rem;
+            }
+          }
+          p{
+            font-size: 2rem;
+            color: var(--color-title);
+            @include sm{
+              font-size: 1.6rem;
+              line-height: 2rem;
+            }
+            @include xs{
+              font-size: 1.6rem;
+              line-height: 2rem;
+            }
+          }
+        }
+      }
+      .socials{
+        align-self: flex-start;
+        display: flex;
+        flex-flow: row nowrap;
+        .socialsElem{
+          border: .1rem solid var(--color-title);
+          width: 6rem;
+          height: 6rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 1rem;
+          background: var(--socials);
+          border-radius: 100%;
+          i{
+            font-size: 2rem;
+            color: var(--color-title);
+          }
+        }
+      }
+    }
+  }
+}

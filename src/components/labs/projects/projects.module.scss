@@ -4,12 +4,15 @@
   display: flex;
   flex-direction: column;
   padding: 16rem 0 5rem 0;
-  .text{
-    font-size: 2rem;
-    color: var(--color-text);
-    letter-spacing: .1rem;
-    margin: 2rem 0 4rem 0;
+  @include sm{
+    padding: 10rem 0 5rem 0;
   }
+  @include xs{
+    padding: 10rem 0 5rem 0;
+  }  
+  @include xxs{
+    padding: 8rem 0 5rem 0;
+  }  
   .projectsContent{
     flex: 1;
     .projectsList{
@@ -18,76 +21,18 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 2rem 1rem;
+      @include md{
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2rem 0;
+      }  
+      @include sm{
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2rem 0;
+      }
+      @include xs{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem 0;
+      }
     }
   }
 }  
-  @include xs{
-    .projects{
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      padding: 10rem 0 5rem 0;
-      .text{
-        font-size: 1.6rem;
-        color: var(--color-text);
-        letter-spacing: .1rem;
-      }
-      .projectsContent{
-        flex: 1;
-        .projectsList{
-          padding: 0;
-          margin: 1rem 0;
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 1rem;
-        }
-      }
-    }  
-  }
-  @include sm{
-    .projects{
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      padding: 10rem 0 5rem 0;
-      .text{
-        font-size: 1.6rem;
-        color: var(--color-text);
-        letter-spacing: .1rem;
-      }
-      .projectsContent{
-        flex: 1;
-        .projectsList{
-          padding: 0;
-          margin: 1rem 0;
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 1rem;
-        }
-      }
-    }  
-  }
-
-  @include md{
-    .projects{
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      padding: 16rem 0 5rem 0;
-      .text{
-        font-size: 1.6rem;
-        color: var(--color-text);
-        letter-spacing: .1rem;
-      }
-      .projectsContent{
-        flex: 1;
-        .projectsList{
-          padding: 0;
-          margin: 1rem 0;
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1rem;
-        }
-      }
-    }  
-  }

@@ -29,7 +29,7 @@ export default class Header extends Component{
             <img src={ profil } className={ Style.logo } alt="profil" />
           </span>
           <button 
-          className={ Style.navbarToggler+" navbar-toggler" } 
+          className={ Style.navbarToggler+" navbar-toggler " } 
           type="button" 
           data-bs-toggle="collapse" 
           data-bs-target="#navbarNav" 
@@ -37,7 +37,9 @@ export default class Header extends Component{
           aria-expanded="false" 
           aria-label="Toggle navigation"
           >
-            <span className={ Style.navbarTogglerIcon }></span>
+            <span 
+            className={ this.props.history.location.pathname === '/home' ? Style.navbarTogglerIconLight : Style.navbarTogglerIconDark }
+            ></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav d-flex ms-auto" id="navbar-nav">

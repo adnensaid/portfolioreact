@@ -21,6 +21,7 @@ const ButtonCategories = (props) => {
             className={i===0 ? Style.navLink+` nav-link active` : Style.navLink+` nav-link`}
             onClick={() => props.setCategory(category)}
             id="pills-contact-tab" 
+            style={{borderRadius:0}}
             data-bs-toggle="pill" 
             data-bs-target="#pills-contact" 
             type="button" 

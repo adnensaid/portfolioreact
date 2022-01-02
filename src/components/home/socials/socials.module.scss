@@ -29,7 +29,6 @@
       margin-bottom:.2rem;
       border-top-right-radius: 100%;
       border-bottom-right-radius: 100%;
-      background: var(--secondary);
       .socialsElemImg{
         position: absolute;
         width: 100%;
@@ -37,7 +36,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: var(--white);
+        background: var(--light);
         padding: .8rem .6rem;
         border-top-right-radius: 100%;
         border-bottom-right-radius: 100%;
@@ -45,7 +44,7 @@
           max-height: 100%;
         }
         i{
-          color:var(--primary);
+          color:var(--dark);
           font-size: 2.5rem;
         }
       }
@@ -53,92 +52,65 @@
         position: absolute;
         width: 100%;
         height: 100%;  
-        background: var(--white);  
+        background: var(--light);  
         border-top-right-radius: 100%;
         border-bottom-right-radius: 100%;
       }
       @include md{
-        border-top-right-radius: 0%;
-        border-bottom-right-radius: 0%;
         margin: 0;        
         flex: 1;
-        padding: 5rem 0;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
         .socialsElemImg{
+          background: transparent;
           border-top-right-radius: 0%;
           border-bottom-right-radius: 0%;
-          background: none;
           i{
-            color: var(--primary);
+            color: var(--light);
           }
         }
         .queu{
           border-top-right-radius: 0%;
           border-bottom-right-radius: 0%;
-          background: none;
-        }
-        &:nth-child(2){
-          .socialsElemImg{
-            background: var(--primary);
-            i{
-              color: var(--secondary);
-            }
-          }
+          background: transparent;
         }
       }
       @include sm{
-        border-top-right-radius: 0%;
-        border-bottom-right-radius: 0%;
         margin: 0;        
         flex: 1;
-        padding: 5rem 0;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
         .socialsElemImg{
+          background: transparent;
           border-top-right-radius: 0%;
           border-bottom-right-radius: 0%;
-          background: var(--secondary);
           i{
-            color: var(--primary);
+            color: var(--light);
           }
         }
         .queu{
           border-top-right-radius: 0%;
           border-bottom-right-radius: 0%;
-          background: var(--primary);
-        }
-        &:nth-child(2){
-          .socialsElemImg{
-            background: var(--primary);
-            i{
-              color: var(--secondary);
-            }
-          }
+          background: transparent;
         }
       }
       @include xs{
-        border-top-right-radius: 0%;
-        border-bottom-right-radius: 0%;
         margin: 0;        
         flex: 1;
-        padding: 5rem 0;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
         .socialsElemImg{
+          background: transparent;
           border-top-right-radius: 0%;
           border-bottom-right-radius: 0%;
-          background: var(--secondary);
           i{
-            color: var(--primary);
+            color: var(--light);
           }
         }
         .queu{
           border-top-right-radius: 0%;
           border-bottom-right-radius: 0%;
-        background: var(--primary);
-        }
-        &:nth-child(2){
-          .socialsElemImg{
-            background: var(--primary);
-            i{
-              color: var(--secondary);
-            }
-          }
+          background: transparent;
         }
       }
       &:hover{

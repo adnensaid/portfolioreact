@@ -34,7 +34,7 @@
     width: 5rem;
     height: 5rem;
     border: none;
-    .navbarTogglerIcon{
+    .navbarTogglerIconDark{
       height: .1rem;
       background: var(--dark);
       display: block;
@@ -46,6 +46,26 @@
         height: 100%;
         left: 0;
         background:var(--dark);
+      }
+      &::before{
+        top: 1.1rem;
+      }
+      &::after{
+        bottom: 1.1rem;
+      }
+    }
+    .navbarTogglerIconLight{
+      height: .1rem;
+      background: var(--light);
+      display: block;
+      position: relative;
+      &::before, &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        background:var(--light);
       }
       &::before{
         top: 1.1rem;

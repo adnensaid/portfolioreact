@@ -20,8 +20,8 @@ export default class Home extends Component{
                 ou savoir plus sur mon parcours, je vous invite à suivre les liens ci-dessous.
               </p>
               <div className={ Style.lienUtiles}>
-                <button id="btn-primary" className={ Style.btnPrimary+" btn btn-primary shadow-lg text-nowrap" }>Parcours</button>
-                <button id="btn-secondary" className={ Style.btnSecondary+" btn btn-secondary shadow-lg text-nowrap" }><a href="https://youthful-noyce-04c1bb.netlify.app" target="_blank" rel="noreferrer" >Last React app</a></button>    
+                <button className="btnPrimary shadow-lg text-nowrap">Parcours</button>
+                <button className="btnSecondary shadow-lg text-nowrap"><a href="https://youthful-noyce-04c1bb.netlify.app" target="_blank" rel="noreferrer" >Last React app</a></button>    
               </div>       
             </div>     
           </div>

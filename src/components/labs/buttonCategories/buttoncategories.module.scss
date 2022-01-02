@@ -1,10 +1,22 @@
 @import '../../../assets/styles/media-queries';
 .navCategories{
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(5, auto);
   justify-items: stretch;
   gap: 1rem;
-  margin: 1rem 0;
+  margin: 8rem 0 0rem 0;
+  @include sm{
+    grid-template-columns: repeat(4, auto);
+    margin: 4rem 0 0rem 0;
+  }
+  @include xs{
+    grid-template-columns: repeat(3, auto);
+    margin: 4rem 0 0rem 0;
+  }
+  @include xxs{
+    grid-template-columns: repeat(3, auto);
+    margin: 2rem 0 0rem 0;
+  }
   .navItem{
     border: .1rem solid var(--gray-400);
     border-radius: .5rem;
@@ -13,6 +25,21 @@
       width: 100%;
       color: var(--color-title);
       font-size: 1.6rem;
+      line-height: 2.4rem;
+      padding: 1rem 0;
+      @include sm{
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding: .5rem 0;
+      }
+      @include xs{
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding: .5rem 0;
+      }
+      @include xxs{
+        font-size: 1.2rem;
+      }
     }
     &:hover{
       border: .1rem solid var(--color-title);

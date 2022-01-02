@@ -87,7 +87,7 @@
   }
 }
 .paragraph{
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   line-height: 3.8rem;
   font-family: 'robotoregular';
   max-width: 50rem;
@@ -107,17 +107,61 @@
     max-height: calc(3.4rem * 4);
   }
   @include xs{
-    font-size: 1.9rem;
-    line-height: 3rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     max-height: calc(3rem * 4);
   }
   @include xxs{
-    font-size: 1.7rem;
-    line-height: 2.7rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
     max-height: calc(2.7rem * 4);
 
   }
 }
+/* btn */
+.btnPrimary{
+  background: var(--secondary);
+  a{
+    color: var(--primary);
+    text-decoration: none;
+  }
+} 
+.btnSecondary{
+  background: var(--light);
+  a{
+    color: var(--dark);
+    text-decoration: none;
+  }
+} 
+.btnSecondary, .btnPrimary{
+  font-family: 'be_vietnamextrabold';
+  margin: 1rem 1rem 1rem 0;
+  border: none;
+  border-radius: 30rem;
+  font-size: 1.8rem;
+  padding: 1.3rem 2.2rem;
+  transition: all ease .2s;
+  &:hover{
+    transition: all ease .2s;
+    transform: scale(1.1);
+  }
+  @include sm{
+    padding:0.8rem 2rem;
+    font-size: 1.6rem;
+    margin: 2rem .5rem;
+  }
+  @include xs{
+    padding:0.8rem 2rem;
+    font-size: 1.6rem;
+    margin: 2rem .5rem;
+  }
+  @include xxs{
+    margin: 2rem .2rem;
+    font-size: 1.6rem;
+    padding: .8rem 1.5rem;
+  }
+}  
+
 /* text color */
 .text-dark{
   color: var(--dark);

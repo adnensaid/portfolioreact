@@ -8,10 +8,9 @@ export default class Projects extends Component{
     const setCategory = this.props.setCategory;
     const displayCategory = this.props.state.displayCategory;
     return(
-      <div className={ Style.projects+" projects" }>
+      <div className={ Style.projects }>
         <div className="container">
           <h2 className="title-page">PORTFOLIO</h2>
-          <p className={ Style.text }> Utilisez le filtre pour afficher tous les projets par compétence. </p>
           <div className={ Style.projectsContent }>
             <ButtonCategories 
             projects = { projects } 

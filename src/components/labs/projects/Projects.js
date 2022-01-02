@@ -14,11 +14,10 @@ export default class Projects extends Component{
       result = projects.filter(p=>p.lang.includes(displayCategory));
     }
     return(
-      <div className={ Style.projects }>
+      <div className={ Style.projects+" projects" }>
         <div className="container">
           <h2 className="title-page">LABS</h2>
           <div className={ Style.projectsContent }>
-          <p className={ Style.text }> Utilisez le filtre pour afficher tous les projets par compétence. </p>
             <ButtonCategories 
             projects = { projects } 
             setCategory = { setCategory }

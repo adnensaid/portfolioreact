@@ -1,0 +1,19 @@
+@import "../../../../assets/styles/media-queries";
+.projectElem{
+  .cardTitle{
+    color: var(--color-title);
+    font-size: 1.6rem;
+    @include sm{
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      padding: 0;
+      margin: 0;
+    }
+    @include xxs{
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

@@ -1,20 +1,24 @@
 @import '../../../assets/styles/media-queries';
 
 .navCategories{
-  //background:var(--gray-300);
-  background: var(--primary);
-  //background: linear-gradient(to left , var(--primary) 10%, #2f3640 90%);
-  background: var(--light);
+  background: var(--gray-400);
+  margin: 8rem 0 0 0;
   border-radius: .5rem;
   overflow:hidden;
   position: sticky;
-  top: 14rem;
+  top: 14.5rem;
   z-index: 1;
   @include sm{
     top: 9.5rem;
+    margin: 4rem 0 0 0;
   }
   @include xs{
     top: 9.5rem;
+    margin: 4rem 0 0 0;
+  }
+  @include xxs{
+    top: 9.5rem;
+    margin: 2rem 0 0 0;
   }
   .navLink{
     padding:1.2rem 0;
@@ -22,16 +26,15 @@
     color: var(--color-title);
     font-size:2.2rem;
     font-family:'be_vietnammedium';
-    border-radius: none !important;
     &:hover, &:focus{
       color: var(--color-title);
     }
     @include sm{
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       padding: 1rem 0;
     }
     @include xs{
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       padding: .8rem 0;
     }
     @include xxs{
