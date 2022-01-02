@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './index.scss';
-import { Header, Home, Portfolio, Labs, Contact, Footer } from './components';
+import { Header, Home, Portfolio, Labs, Contact } from './components';
 import { BrowserRouter as Router, Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 

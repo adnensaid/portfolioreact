@@ -5,7 +5,7 @@ const Footer = ()=>{
   return(
     <footer className={ Style.footer }>
       <div className="container">
-        <h2 className={ Style.logo }><img src={ logo } alt="photo" /></h2>
+        <h2 className={ Style.logo }><img src={ logo } alt="logo" /></h2>
         <p>
         Envie d'entrer en contact ou de parler d'un projet ?
         N'hésitez pas à me contacter par mail à
