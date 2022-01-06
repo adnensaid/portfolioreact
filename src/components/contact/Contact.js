@@ -10,7 +10,7 @@ const ComposantInput = ({ field, form : { touched, errors }, ...props })=>(
     { ...field }
     className={ errors[field.name] && touched[field.name] ? "form-control border border-2 border-danger" : "form-control border-none" } 
     {...props}
-    placeholder="Votre nom"  />  
+    placeholder={ field.name }  />  
 );
 const CustomError = (props)=>{
   return(
@@ -103,7 +103,7 @@ export default class Contact extends Component{
                 </div>
                 <div className={ Style.contactCordinateTextElem }>
                   <i className="far fa-envelope-open"></i>
-                  <p>admin@webify.pro</p>
+                  <p>adnensaid83@gmail.com</p>
                 </div>
               </div>
               <div className={ Style.socials }>
